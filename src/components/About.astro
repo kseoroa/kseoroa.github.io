@@ -19,19 +19,35 @@ import { siteConfig } from "../config";
       </div>
 
       <div class="lg:col-span-8 space-y-8">
-        <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600 whitespace-pre-line">
-          {siteConfig.aboutMe}
-        </p>
+        <!-- 개선된 aboutMe 텍스트 -->
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-2 h-2 rounded-full mt-3"
+                 style={`background-color: ${siteConfig.accentColor}`}></div>
+            <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-800">
+              <span class="font-bold text-gray-900">"이 코드, 왜 이렇게 짰어요?"</span>
+              이 질문을 받지 않는 코드를 씁니다.
+            </p>
+          </div>
 
-        <div class="pt-4">
-          <div class="flex flex-wrap gap-3">
-            {
-              siteConfig.skills.map((skill) => (
-                <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200">
-                  {skill}
-                </span>
-              ))
-            }
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-2 h-2 rounded-full mt-3"
+                 style={`background-color: ${siteConfig.accentColor}`}></div>
+            <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-800">
+              주석이 필요 없을 만큼 <span class="font-bold text-gray-900">명확한 코드</span>가
+              최고의 문서라고 믿습니다.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-2 h-2 rounded-full mt-3"
+                 style={`background-color: ${siteConfig.accentColor}`}></div>
+            <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-800">
+              기획자의 <span class="font-bold text-gray-900">"이거 되나요?"</span>에
+              <span class="line-through text-gray-400">"안 됩니다"</span> 대신
+              <span class="font-bold" style={`color: ${siteConfig.accentColor}`}>"이렇게 하면 됩니다"</span>로
+              답하는 개발자입니다.
+            </p>
           </div>
         </div>
       </div>
