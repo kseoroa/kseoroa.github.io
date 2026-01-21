@@ -61,9 +61,10 @@ export const siteConfig = {
       title: "Junior BackEnd Developer",
       dateRange: "2025.01 - Present",
       bullets: [
-        "APEC 2025 정상회의 실시간 관제 시스템 구축",
-        "실시간 통신 아키텍처 설계 및 구현",
-        "GitLab CI/CD 파이프라인 구축 및 테스트 자동화",
+        "FastAPI + PostgreSQL 기반 APEC 2025 관제 시스템 백엔드 API 설계 및 구현",
+        "WebSocket + Redis Pub/Sub을 활용한 실시간 데이터 통신 아키텍처 설계",
+        "Alembic 기반 DB 마이그레이션 자동화로 60회 이상 스키마 변경 무충돌 운영",
+          "GitLab CI/CD 파이프라인 구축으로 테스트 및 배포 자동화"
       ],
     },
   ],
@@ -77,7 +78,7 @@ export const siteConfig = {
       ],
     },
     {
-      name: "베트남 하이즈엉 IT 교육 봉사",
+      school: "베트남 하이즈엉 IT 교육 봉사",
       dateRange: "2023.06 - 2023.07",
       achievements: [
         "VR/AR 교육 봉사",
