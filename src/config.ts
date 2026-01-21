@@ -69,7 +69,7 @@ export const siteConfig = {
   ],
   education: [
     {
-      name: "멋쟁이사자처럼 백엔드스쿨 10기",
+      school: "멋쟁이사자처럼 백엔드스쿨 10기",
       dateRange: "2024.03 - 2024.09",
       achievements: [
         "Java, Spring Boot, MySQL, AWS 기반 백엔드 개발 학습",
