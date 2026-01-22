@@ -70,6 +70,14 @@ export const siteConfig = {
   ],
   education: [
     {
+      school: "남서울대학교",
+      dateRange: "2020 - 2025.02",
+      achievements: [
+        "정보통신공학과 학사",
+        "학점: 4.19/4.5",
+      ]
+    },
+    {
       school: "멋쟁이사자처럼 백엔드스쿨 10기",
       dateRange: "2024.03 - 2024.09",
       achievements: [
