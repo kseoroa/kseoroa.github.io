@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: "KyongSeo Park",
+  image: "img/profile.jpg",
   title: "KyongSeo | Backend Developer",
   description: "좋은 코드는 읽는 사람을 배려하는 코드다.",
   accentColor: "#1d4ed8",
@@ -18,24 +19,26 @@ export const siteConfig = {
         'WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계, 메시지 유실률 0.1% 이하 달성',
         '복합 인덱스 최적화로 100만 건 로그 조회 5초 → 1초 (80% 개선)',
         'Alembic 마이그레이션 자동화로 60회 이상 스키마 변경 충돌 zero',
-        'JWT + RBAC 권한 관리 체계 구현',
+        'JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)',
         'Heartbeat 메커니즘으로 연결 끊김 3초 이내 자동 재연결',
-        'Swagger 자동 문서화로 API 협의 시간 70% 단축',
-        'GitLab CI/CD 파이프라인 구축 및 무중단 배포',
+        '공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상',
+        'Swagger UI로 실시간 API 문서 제공',
+        'Docker + AWS 기반 개발/운영 환경 일원화',
+        'GitLab CI/CD 파이프라인 구축 및 무중단 배포'
       ],
     },
     {
       name: "위치정보 사업자 관리 웹페이지",
       description:
         "위치정보 사업자 정보를 관리하는 백오피스 시스템 구축 프로젝트",
-      skills: ["Python", "FastAPI", "PostgreSQL", "Alembic", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
+      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
         'Soft Delete 패턴으로 실수 삭제 데이터 10건 이상 복구, 데이터 무결성 100% 유지',
-        'JWT 기반 계층형 권한 체계 설계 (슈퍼관리자/일반관리자)',
+        'JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)',
         'Alembic 마이그레이션 자동화로 스키마 변경 시간 80% 단축',
-        'Swagger UI로 실시간 API 문서 제공, 프론트엔드 커뮤니케이션 비용 감소',
-        '공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상',
-        'Docker + AWS 기반 개발/운영 환경 일원화'
+        'Swagger UI로 실시간 API 문서 제공',
+        'Docker + AWS 기반 개발/운영 환경 일원화',
+        'GitLab CI/CD 파이프라인 구축 및 무중단 배포'
       ],
     },
     {
@@ -45,7 +48,6 @@ export const siteConfig = {
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
       bulletPoints: [
         'Redis 캐싱 + 복합 인덱스로 쿼리 성능 84% 향상 (500ms → 80ms)',
-        'IQR 이상치 필터링으로 예산 추천 정확도 25% 개선',
         '낙관적 락(@Version) 적용으로 동시성 이슈 100% 해결',
         'JUnit 기반 테스트 커버리지 70% 이상, 120+ 테스트 케이스 작성',
         'JWT + Redis 토큰 블랙리스트로 보안 강화',
