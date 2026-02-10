@@ -2,13 +2,82 @@ export const siteConfig = {
   name: "KyongSeo Park",
   image: "img/profile.jpg",
   title: "KyongSeo | Backend Developer",
-  description: "좋은 코드는 읽는 사람을 배려하는 코드다.",
+  description: "코드는 다른 개발자가 읽을 거라 생각하고 씁니다.",
   accentColor: "#1d4ed8",
   social: {
     email: "pokj9800113@gmail.com",
     github: "https://github.com/kyongseo",
   },
-  skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "Python", "FastAPI", "Alembic", "AWS", "Docker", "MongoDB", "RESTful API", "Redis", "GitLab CI/CD", "Swagger"],
+  aboutMe: "Python & FastAPI, Java & Spring Boot 기반의 백엔드 개발자로 실시간 관제 시스템, 위치정보 사업자 관리 시스템 등의 서비스 개발을 해왔습니다. 코드는 다른 개발자가 읽을 거라 생각하고 작성하며, 주석 달 시간에 명확하게 짜는 게 낫다고 믿습니다. \"이거 안 돼요\" 대신 \"이렇게 하면 되는데요?\" 이런 대화를 좋아하는 개발자입니다. 테스트 코드 작성을 당연하게 생각하며, JUnit 기반 120+ 테스트 케이스를 작성하고 70% 이상의 테스트 커버리지를 유지하는 환경을 구성하였습니다.",
+  skills: {
+    backend: "Python, Java, FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate, JUnit, Mockito, Gradle, Maven, IntelliJ IDEA, PyCharm, Visual Studio Code",
+    devops: "PostgreSQL, MySQL, GitLab CI/CD, Docker, AWS (EC2, RDS, S3), Redis, Nginx, Linux",
+    communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger/OpenAPI"
+  },
+  experience: [
+    {
+      company: "(주) HDS",
+      title: "Junior BackEnd Developer",
+      dateRange: "2025.01 - 현재",
+      description: "실시간 관제 시스템 개발 및 백오피스 구축",
+      bullets: [
+        "APEC 2025 관제 시스템 전체 백엔드 아키텍처 설계",
+        "WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계 및 구현",
+        "복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
+        "Alembic DB 마이그레이션 자동화로 60회+ 스키마 변경 무충돌 운영",
+        "GitLab CI/CD 파이프라인 구축 및 무중단 배포 환경 구성"
+      ],
+    },
+  ],
+  capabilities: [
+    {
+      title: "실시간 통신 시스템 구축",
+      dateRange: "2025.01 ~ 현재",
+      bullets: [
+        "APEC 2025 관제 시스템 - WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계",
+        "Heartbeat 메커니즘으로 연결 끊김 3초 이내 자동 재연결 구현",
+        "메시지 유실률 0.1% 이하 달성"
+      ]
+    },
+    {
+      title: "데이터베이스 성능 최적화",
+      dateRange: "",
+      bullets: [
+        "복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
+        "Redis 캐싱 + 복합 인덱스로 쿼리 성능 84% 향상 (500ms → 80ms)",
+        "낙관적 락(@Version) 적용으로 동시성 이슈 100% 해결",
+        "Soft Delete 패턴으로 실수 삭제 데이터 10건 이상 복구, 데이터 무결성 100% 유지"
+      ]
+    },
+    {
+      title: "견고한 보안 및 권한 관리 체계",
+      dateRange: "",
+      bullets: [
+        "JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)",
+        "JWT + Redis 토큰 블랙리스트로 보안 강화",
+        "공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상"
+      ]
+    },
+    {
+      title: "CI/CD 및 인프라 자동화",
+      dateRange: "",
+      bullets: [
+        "Alembic 마이그레이션 자동화로 60회 이상 스키마 변경 충돌 zero",
+        "GitLab CI/CD 파이프라인 구축 및 무중단 배포",
+        "Docker + AWS 기반 개발/운영 환경 일원화",
+        "Swagger UI로 실시간 API 문서 제공"
+      ]
+    },
+    {
+      title: "테스트 주도 개발",
+      dateRange: "",
+      bullets: [
+        "개인 재무 관리 시스템 - JUnit 기반 테스트 커버리지 70% 이상",
+        "120+ 테스트 케이스 작성으로 안정적인 코드 품질 유지",
+        "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현"
+      ]
+    }
+  ],
   projects: [
     {
       name: 'APEC 2025 관제 시스템',
@@ -52,19 +121,6 @@ export const siteConfig = {
         'JUnit 기반 테스트 커버리지 70% 이상, 120+ 테스트 케이스 작성',
         'JWT + Redis 토큰 블랙리스트로 보안 강화',
         'Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송',
-      ],
-    },
-  ],
-  experience: [
-    {
-      company: "(주) HDS",
-      title: "Junior BackEnd Developer",
-      dateRange: "2025.01 - Present",
-      bullets: [
-        "FastAPI + PostgreSQL 기반 APEC 2025 관제 시스템 백엔드 API 설계 및 구현",
-        "WebSocket + Redis Pub/Sub을 활용한 실시간 데이터 통신 아키텍처 설계",
-        "Alembic 기반 DB 마이그레이션 자동화로 60회 이상 스키마 변경 무충돌 운영",
-          "GitLab CI/CD 파이프라인 구축으로 테스트 및 배포 자동화"
       ],
     },
   ],
