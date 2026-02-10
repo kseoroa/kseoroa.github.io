@@ -16,6 +16,7 @@ export const siteConfig = {
 
 테스트 코드 작성을 당연하게 생각하며, JUnit 기반 120+ 테스트 케이스를 작성하고
 70% 이상의 테스트 커버리지를 유지하는 환경을 구성하였습니다.
+
 현재는 Junior Backend Developer로서 실시간 통신 시스템 설계, DB 성능 최적화,
 CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
     skills: {
@@ -28,39 +29,39 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
       company: "(주) HDS",
       title: "Junior BackEnd Developer",
       dateRange: "2025.01 - 현재",
-      description: "실시간 관제 시스템 개발 및 백오피스 구축",
+      description: "실시간 관제 시스템 개발 및 백오피스 구축 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)",
       bullets: [
-        "APEC 2025 관제 시스템 전체 백엔드 아키텍처 설계",
+        "APEC 2025 관제 시스템 전체 백엔드 개발자로 개발/설계",
         "WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계 및 구현",
         "복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
         "Alembic DB 마이그레이션 자동화로 60회+ 스키마 변경 무충돌 운영",
-        "GitLab CI/CD 파이프라인 구축 및 무중단 배포 환경 구성"
+        "GitLab CI/CD 파이프라인 구축 및 무중단 배포 환경 구성",
+        "테스트 코드 & 코드리뷰 & 아키텍처 개선 등 개발환경 개선"
       ],
     },
   ],
   capabilities: [
     {
       title: "실시간 통신 시스템 구축",
-      dateRange: "2025.01 ~ 현재",
+      dateRange: "2025.01 ~ 2025.10",
       bullets: [
-        "APEC 2025 관제 시스템 - WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계",
+        "WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계",
         "Heartbeat 메커니즘으로 연결 끊김 3초 이내 자동 재연결 구현",
         "메시지 유실률 0.1% 이하 달성"
       ]
     },
     {
       title: "데이터베이스 성능 최적화",
-      dateRange: "",
+      dateRange: "2025.01 ~ 2025.10",
       bullets: [
         "복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
         "Redis 캐싱 + 복합 인덱스로 쿼리 성능 84% 향상 (500ms → 80ms)",
-        "낙관적 락(@Version) 적용으로 동시성 이슈 100% 해결",
         "Soft Delete 패턴으로 실수 삭제 데이터 10건 이상 복구, 데이터 무결성 100% 유지"
       ]
     },
     {
       title: "견고한 보안 및 권한 관리 체계",
-      dateRange: "",
+      dateRange: "2025.01 ~ 2025.10",
       bullets: [
         "JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)",
         "JWT + Redis 토큰 블랙리스트로 보안 강화",
@@ -69,7 +70,7 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
     },
     {
       title: "CI/CD 및 인프라 자동화",
-      dateRange: "",
+      dateRange: "2025.01 ~ 2025.10",
       bullets: [
         "Alembic 마이그레이션 자동화로 60회 이상 스키마 변경 충돌 zero",
         "GitLab CI/CD 파이프라인 구축 및 무중단 배포",
@@ -79,9 +80,9 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
     },
     {
       title: "테스트 주도 개발",
-      dateRange: "",
+      dateRange: "2025.10 ~ 2026.01",
       bullets: [
-        "개인 재무 관리 시스템 - JUnit 기반 테스트 커버리지 70% 이상",
+        "JUnit 기반 테스트 커버리지 70% 이상",
         "120+ 테스트 케이스 작성으로 안정적인 코드 품질 유지",
         "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현"
       ]
@@ -90,6 +91,7 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
   projects: [
     {
       name: 'APEC 2025 관제 시스템',
+      dateRange: "2025.01 - 2025.10",
       description:
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 구축 프로젝트',
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
@@ -107,6 +109,7 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
     },
     {
       name: "위치정보 사업자 관리 웹페이지",
+      dateRange: "2025.01 - 2025.02",
       description:
         "위치정보 사업자 정보를 관리하는 백오피스 시스템 구축 프로젝트",
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
@@ -121,12 +124,12 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
     },
     {
       name: "개인 재무 관리 시스템",
+      dateRange: "2025.09 - 2025.12",
       description:
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API - 1인 프로젝트",
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
       bulletPoints: [
         'Redis 캐싱 + 복합 인덱스로 쿼리 성능 84% 향상 (500ms → 80ms)',
-        '낙관적 락(@Version) 적용으로 동시성 이슈 100% 해결',
         'JUnit 기반 테스트 커버리지 70% 이상, 120+ 테스트 케이스 작성',
         'JWT + Redis 토큰 블랙리스트로 보안 강화',
         'Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송',
@@ -136,7 +139,7 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
   education: [
     {
       school: "남서울대학교",
-      dateRange: "2020 - 2025.02",
+      dateRange: "2020.03 - 2025.02",
       achievements: [
         "정보통신공학과 학사",
         "학점: 4.19/4.5",

@@ -46,6 +46,12 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                         >
                           {exp.company}
                         </p>
+                        <p
+                                                  class={`text-base sm:text-lg text-gray-600 leading-relaxed ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
+                                                >
+                                                  {exp.description}
+                                                </p>
+
                       </div>
                       <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">
                         {exp.dateRange}
