@@ -8,8 +8,17 @@ export const siteConfig = {
     email: "pokj9800113@gmail.com",
     github: "https://github.com/kyongseo",
   },
-  aboutMe: "Python & FastAPI, Java & Spring Boot 기반의 백엔드 개발자로 실시간 관제 시스템, 위치정보 사업자 관리 시스템 등의 서비스 개발을 해왔습니다. 코드는 다른 개발자가 읽을 거라 생각하고 작성하며, 주석 달 시간에 명확하게 짜는 게 낫다고 믿습니다. \"이거 안 돼요\" 대신 \"이렇게 하면 되는데요?\" 이런 대화를 좋아하는 개발자입니다. 테스트 코드 작성을 당연하게 생각하며, JUnit 기반 120+ 테스트 케이스를 작성하고 70% 이상의 테스트 커버리지를 유지하는 환경을 구성하였습니다.",
-  skills: {
+  aboutMe: `Python & FastAPI, Java & Spring Boot 기반의 백엔드 개발자로
+실시간 관제 시스템, 위치정보 사업자 관리 시스템 등의 서비스 개발을 해왔습니다.
+
+코드는 다른 개발자가 읽을 거라 생각하고 작성하며, 주석 달 시간에 명확하게 짜는 게 낫다고 믿습니다.
+"이거 안 돼요" 대신 "이렇게 하면 되는데요?" 이런 대화를 좋아하는 개발자입니다.
+
+테스트 코드 작성을 당연하게 생각하며, JUnit 기반 120+ 테스트 케이스를 작성하고
+70% 이상의 테스트 커버리지를 유지하는 환경을 구성하였습니다.
+현재는 Junior Backend Developer로서 실시간 통신 시스템 설계, DB 성능 최적화,
+CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
+    skills: {
     backend: "Python, Java, FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate, JUnit, Mockito, Gradle, Maven, IntelliJ IDEA, PyCharm, Visual Studio Code",
     devops: "PostgreSQL, MySQL, GitLab CI/CD, Docker, AWS (EC2, RDS, S3), Redis, Nginx, Linux",
     communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger/OpenAPI"
