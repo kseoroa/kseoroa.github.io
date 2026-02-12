@@ -1,42 +1,87 @@
 export const siteConfig = {
   name: "KyongSeo Park",
   image: "img/profile.jpg",
-  title: "KyongSeo | Backend Developer",
+  title: "KyongSeo | 서버 백엔드 엔지니어",
   description: "코드는 다른 개발자가 읽을 거라 생각하고 씁니다.",
   accentColor: "#1d4ed8",
   social: {
     email: "pokj9800113@gmail.com",
     github: "https://github.com/kyongseo",
   },
-  aboutMe: `Python & FastAPI, Java & Spring Boot 기반의 백엔드 개발자로
-실시간 관제 시스템, 위치정보 사업자 관리 시스템 등의 서비스 개발을 해왔습니다.
+  aboutMe: `Python & FastAPI, Java & Spring Boot 기반의 백엔드 개발자로 실시간 관제 시스템, 위치정보 사업자 관리 시스템 등의 서비스 개발 경험이 있습니다.
 
-코드는 다른 개발자가 읽을 거라 생각하고 작성하며, 주석 달 시간에 명확하게 짜는 게 낫다고 믿습니다.
-"이거 안 돼요" 대신 "이렇게 하면 되는데요?" 이런 대화를 좋아하는 개발자입니다.
+현재는 (주)HDS에서 Junior Backend Developer로 실시간 통신 시스템 설계, DB 성능 최적화, CI/CD 파이프라인 구축 등을 담당하고 있습니다. WebSocket + Redis Pub/Sub 기반 실시간 통신 구조를 설계하고, 복합 인덱스 최적화로 100만 건 로그 조회 성능을 80% 개선(5초 → 1초)한 경험이 있습니다.
 
-테스트 코드 작성을 당연하게 생각하며, JUnit 기반 120+ 테스트 케이스를 작성하고
-70% 이상의 테스트 커버리지를 유지하는 환경을 구성하였습니다.
+코드는 다른 개발자가 읽을 거라 생각하고 작성하며, "주석 달 시간에 명확하게 짜는 게 낫다"고 믿습니다. 테스트 코드 작성을 당연하게 생각하며, JUnit 기반 120+ 테스트 케이스 작성과 70% 이상의 테스트 커버리지를 유지하는 환경을 구성했습니다.
 
-현재는 Junior Backend Developer로서 실시간 통신 시스템 설계, DB 성능 최적화,
-CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
+"이거 안 돼요" 대신 "이렇게 하면 되는데요?"라는 대화를 좋아하는 개발자입니다.`,
     skills: {
-    backend: "Python, Java, FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate, JUnit, Mockito, Gradle, Maven, IntelliJ IDEA, PyCharm, Visual Studio Code",
-    devops: "PostgreSQL, MySQL, GitLab CI/CD, Docker, AWS (EC2, RDS, S3), Redis, Nginx, Linux",
-    communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger/OpenAPI"
+      languages: "Python, Java",
+      frameworks: "FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate",
+      testing: "JUnit",
+      tools: "Gradle, IntelliJ IDEA, PyCharm",
+      infrastructure: "PostgreSQL, Redis, Docker, AWS (EC2, RDS, S3), Nginx, Linux, GitLab CI/CD",
+      communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger"
   },
   experience: [
     {
       company: "(주) HDS",
       title: "Junior BackEnd Developer",
       dateRange: "2025.01 - 현재",
-      description: "실시간 관제 시스템 개발 및 백오피스 구축 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)",
+      description: "기업부설연구소 - 실시간 관제 시스템 및 백오피스 구축",
       bullets: [
-        "APEC 2025 관제 시스템 전체 백엔드 개발자로 개발/설계",
-        "WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계 및 구현",
-        "복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
-        "Alembic DB 마이그레이션 자동화로 60회+ 스키마 변경 무충돌 운영",
-        "GitLab CI/CD 파이프라인 구축 및 무중단 배포 환경 구성",
+        "APEC 2025 관제 시스템 전체 서버 백엔드 API 개발/설계",
+        "관제 시스템 필요 데이터 모델 설계",
+        "WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계",
+        "서비스 안정성 강화, 레거시 시스템 개선",
         "테스트 코드 & 코드리뷰 & 아키텍처 개선 등 개발환경 개선"
+      ],
+    },
+  ],
+  projects: [
+    {
+      name: 'APEC 2025 관제 시스템 개발 및 운영',
+      dateRange: "2025.01 - 2025.10",
+      description:
+        'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)',
+      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
+      bulletPoints: [
+        "실시간 관제 시스템 백엔드 API 개발 및 운영 / 유지보수",
+        "2025년 성능 최적화 및 공통 라이브러리 구축",
+        "   - 복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
+        "   - 쿼리 실행 계획 분석 및 인덱스 전략 수립",
+        "   - 공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상",
+        "   - Alembic DB 마이그레이션 자동화로 60회+ 스키마 변경 무충돌 운영",
+      ],
+    },
+    {
+      name: "위치정보 사업자 관리 백오피스",
+      dateRange: "2025.01 - 2025.02",
+      description: "위치정보 사업자 정보를 관리하는 백오피스 시스템 구축",
+      bullets: [
+        "Soft Delete 패턴으로 실수 삭제 데이터 10건 이상 복구, 데이터 무결성 100% 유지",
+        "JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)",
+        "Alembic 마이그레이션 자동화로 스키마 변경 시간 80% 단축",
+        "Swagger UI로 실시간 API 문서 제공",
+        "Docker + AWS 기반 개발/운영 환경 일원화",
+        "GitLab CI/CD 파이프라인 구축 및 무중단 배포"
+      ],
+    },
+    {
+      name: "개인 재무 관리 시스템",
+      dateRange: "2025.09 - 2025.12",
+      description:
+        "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API - 1인 프로젝트",
+      skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
+      bulletPoints: [
+        "Redis 캐싱 + 복합 인덱스로 쿼리 성능 84% 향상 (500ms → 80ms)",
+        "자주 조회되는 통계 데이터 캐싱으로 DB 부하 감소",
+        "JUnit 기반 테스트 커버리지 70% 이상 유지",
+        "120+ 테스트 케이스 작성으로 안정적인 코드 품질 확보",
+        "단위 테스트, 통합 테스트, E2E 테스트 구현",
+        "JWT + Redis 토큰 블랙리스트로 보안 강화",
+        "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현",
+        "예산 초과 시 실시간 알림 기능 개발"
       ],
     },
   ],
@@ -65,7 +110,7 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
       bullets: [
         "JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)",
         "JWT + Redis 토큰 블랙리스트로 보안 강화",
-        "공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상"
+        "공통 모듈(인증, 권한, 로깅) 라이브러리화"
       ]
     },
     {
@@ -87,54 +132,6 @@ CI/CD 파이프라인 구축 등을 주요 업무로 하고 있습니다.`,
         "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현"
       ]
     }
-  ],
-  projects: [
-    {
-      name: 'APEC 2025 관제 시스템',
-      dateRange: "2025.01 - 2025.10",
-      description:
-        'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 구축 프로젝트',
-      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
-      bulletPoints: [
-        'WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계, 메시지 유실률 0.1% 이하 달성',
-        '복합 인덱스 최적화로 100만 건 로그 조회 5초 → 1초 (80% 개선)',
-        'Alembic 마이그레이션 자동화로 60회 이상 스키마 변경 충돌 zero',
-        'JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)',
-        'Heartbeat 메커니즘으로 연결 끊김 3초 이내 자동 재연결',
-        '공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상',
-        'Swagger UI로 실시간 API 문서 제공',
-        'Docker + AWS 기반 개발/운영 환경 일원화',
-        'GitLab CI/CD 파이프라인 구축 및 무중단 배포'
-      ],
-    },
-    {
-      name: "위치정보 사업자 관리 웹페이지",
-      dateRange: "2025.01 - 2025.02",
-      description:
-        "위치정보 사업자 정보를 관리하는 백오피스 시스템 구축 프로젝트",
-      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
-      bulletPoints: [
-        'Soft Delete 패턴으로 실수 삭제 데이터 10건 이상 복구, 데이터 무결성 100% 유지',
-        'JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)',
-        'Alembic 마이그레이션 자동화로 스키마 변경 시간 80% 단축',
-        'Swagger UI로 실시간 API 문서 제공',
-        'Docker + AWS 기반 개발/운영 환경 일원화',
-        'GitLab CI/CD 파이프라인 구축 및 무중단 배포'
-      ],
-    },
-    {
-      name: "개인 재무 관리 시스템",
-      dateRange: "2025.09 - 2025.12",
-      description:
-        "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API - 1인 프로젝트",
-      skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
-      bulletPoints: [
-        'Redis 캐싱 + 복합 인덱스로 쿼리 성능 84% 향상 (500ms → 80ms)',
-        'JUnit 기반 테스트 커버리지 70% 이상, 120+ 테스트 케이스 작성',
-        'JWT + Redis 토큰 블랙리스트로 보안 강화',
-        'Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송',
-      ],
-    },
   ],
   education: [
     {
