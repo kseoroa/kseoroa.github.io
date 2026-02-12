@@ -10,12 +10,13 @@ export const siteConfig = {
   },
   aboutMe: `Python & FastAPI, Java & Spring Boot 기반의 백엔드 개발자로 실시간 관제 시스템, 위치정보 사업자 관리 시스템 등의 서비스 개발 경험이 있습니다.
 
-현재는 (주)HDS에서 Junior Backend Developer로 실시간 통신 시스템 설계, DB 성능 최적화, CI/CD 파이프라인 구축 등을 담당하고 있습니다. WebSocket + Redis Pub/Sub 기반 실시간 통신 구조를 설계하고, 복합 인덱스 최적화로 100만 건 로그 조회 성능을 80% 개선(5초 → 1초)한 경험이 있습니다.
+현재는 (주)HDS에서 Junior Backend Developer로 실시간 통신 시스템 설계, DB 성능 최적화, CI/CD 파이프라인 구축 등을 담당하고 있습니다. WebSocket 기반 실시간 통신 구조를 설계하고, 복합 인덱스 최적화로 100만 건 로그 조회 성능을 80% 개선(5초 → 1초)한 경험이 있습니다.
 
 코드는 다른 개발자가 읽을 거라 생각하고 작성하며, "주석 달 시간에 명확하게 짜는 게 낫다"고 믿습니다. 테스트 코드 작성을 당연하게 생각하며, JUnit 기반 120+ 테스트 케이스 작성과 70% 이상의 테스트 커버리지를 유지하는 환경을 구성했습니다.
 
 "이거 안 돼요" 대신 "이렇게 하면 되는데요?"라는 대화를 좋아하는 개발자입니다.`,
-    skills: {
+
+  skills: {
       languages: "Python, Java",
       frameworks: "FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate",
       testing: "JUnit",
@@ -46,24 +47,22 @@ export const siteConfig = {
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)',
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
-        "실시간 관제 시스템 백엔드 API 개발 및 운영 / 유지보수",
-        "2025년 성능 최적화 및 공통 라이브러리 구축",
-        "   - 복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
-        "   - 쿼리 실행 계획 분석 및 인덱스 전략 수립",
-        "   - 공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상",
-        "   - Alembic DB 마이그레이션 자동화로 60회+ 스키마 변경 무충돌 운영",
+        "실시간 관제 시스템 백엔드 API 개발 및 운영",
+        "성능 최적화 및 공통 라이브러리 구축",
+        "복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
+        "공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상",
+        "Alembic DB 마이그레이션 자동화로 60회+ 스키마 변경 무충돌 운영",
       ],
     },
     {
       name: "위치정보 사업자 관리 백오피스",
       dateRange: "2025.01 - 2025.02",
       description: "위치정보 사업자 정보를 관리하는 백오피스 시스템 구축",
-      bullets: [
+      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
+      bulletPoints: [
         "Soft Delete 패턴으로 실수 삭제 데이터 10건 이상 복구, 데이터 무결성 100% 유지",
         "JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)",
         "Alembic 마이그레이션 자동화로 스키마 변경 시간 80% 단축",
-        "Swagger UI로 실시간 API 문서 제공",
-        "Docker + AWS 기반 개발/운영 환경 일원화",
         "GitLab CI/CD 파이프라인 구축 및 무중단 배포"
       ],
     },
@@ -78,7 +77,6 @@ export const siteConfig = {
         "자주 조회되는 통계 데이터 캐싱으로 DB 부하 감소",
         "JUnit 기반 테스트 커버리지 70% 이상 유지",
         "120+ 테스트 케이스 작성으로 안정적인 코드 품질 확보",
-        "단위 테스트, 통합 테스트, E2E 테스트 구현",
         "JWT + Redis 토큰 블랙리스트로 보안 강화",
         "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현",
         "예산 초과 시 실시간 알림 기능 개발"
