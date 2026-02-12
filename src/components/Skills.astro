@@ -1,6 +1,7 @@
 ---
-import { siteConfig } from "../config";
-const hasSkills = siteConfig.skills && siteConfig.skills.length > 0;
+import { siteConfig } from '../config.ts';
+
+const { skills } = siteConfig;
 ---
 
 <section id="skills" class="p-8 sm:p-12 md:p-16 lg:p-24">
