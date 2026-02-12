@@ -8,20 +8,19 @@ export const siteConfig = {
     email: "pokj9800113@gmail.com",
     github: "https://github.com/kyongseo",
   },
-  aboutMe: `Python & FastAPI, Java & Spring Boot 기반의 백엔드 개발자로 실시간 관제 시스템, 위치정보 사업자 관리 시스템 등의 서비스 개발 경험이 있습니다.
-
-현재는 (주)HDS에서 Junior Backend Developer로 실시간 통신 시스템 설계, DB 성능 최적화, CI/CD 파이프라인 구축 등을 담당하고 있습니다. WebSocket 기반 실시간 통신 구조를 설계하고, 복합 인덱스 최적화로 100만 건 로그 조회 성능을 80% 개선(5초 → 1초)한 경험이 있습니다.
-
-코드는 다른 개발자가 읽을 거라 생각하고 작성하며, "주석 달 시간에 명확하게 짜는 게 낫다"고 믿습니다. 테스트 코드 작성을 당연하게 생각하며, JUnit 기반 120+ 테스트 케이스 작성과 70% 이상의 테스트 커버리지를 유지하는 환경을 구성했습니다.
-
-"이거 안 돼요" 대신 "이렇게 하면 되는데요?"라는 대화를 좋아하는 개발자입니다.`,
+  aboutMe: `현재는 (주)HDS에서 Junior Backend Developer로 백엔드 개발을 담당하고 있습니다.
+  
+   Python, Java, Spring Boot, FastAPI 등을 주력으로 사용하며, PostGreSQL, Redis, Kafka 기반 환경에서 확장성과 유지 보수성이 높은 아키텍처를 설계하고 운영한 경험이 있습니다. 
+   
+   백엔드 개발자로서 전문성을 계속 확장해 나가면서도, 팀과 조직과 함께 성장하는 개발자가 되고자 합니다. 서비스 개발은 결국 개발과 비즈니스의 긴밀한 커뮤니케이션 위에서 완성된다고 믿습니다. 적극적인 소통과 협력을 통해 문제를 해결하고 가치를 만들어내는 개발자가 되기 위해 끊임없이 학습하고 경험을 쌓고 있습니다.',
+  `,
 
   skills: {
-      languages: "Python, Java",
+      languages: "Python, Java, Kotlin",
       frameworks: "FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate",
       testing: "JUnit",
-      tools: "Gradle, IntelliJ IDEA, PyCharm",
-      infrastructure: "PostgreSQL, Redis, Docker, AWS (EC2, RDS, S3), Nginx, Linux, GitLab CI/CD",
+      tools: "Git, Github, GitLab CI/CD, Gradle, IntelliJ IDEA, PyCharm",
+      Databases: "PostgreSQL, Redis, Docker, Kafka, AWS (EC2, RDS, S3), Linux",
       communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger"
   },
   experience: [
@@ -49,9 +48,9 @@ export const siteConfig = {
       bulletPoints: [
         "실시간 관제 시스템 백엔드 API 개발 및 운영",
         "성능 최적화 및 공통 라이브러리 구축",
-        "복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
         "공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상",
-        "Alembic DB 마이그레이션 자동화로 60회+ 스키마 변경 무충돌 운영",
+        "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현",
+        "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
     {
@@ -176,7 +175,3 @@ export const siteConfig = {
     },
   ],
 };
-
-
-
-
