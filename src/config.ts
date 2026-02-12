@@ -46,23 +46,26 @@ export const siteConfig = {
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)',
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
-        "실시간 관제 시스템 백엔드 API 개발 및 운영",
-        "성능 최적화 및 공통 라이브러리 구축",
-        "공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상",
+        "실시간 관제 시스템 백엔드 아키텍처 설계 및 핵심 API 개발",
         "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현",
+        "대용량 관제 데이터 처리를 위한 DB 스키마 설계 및 성능 최적화",
+        "WebSocket 기반 실시간 위치·이벤트 데이터 수신 및 저장 구조 구현",
+        "공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상",
         "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
     {
-      name: "위치정보 사업자 관리 백오피스",
+      name: "블루캅 관제 시스템 위치정보 사업자 관리 백오피스",
       dateRange: "2025.01 - 2025.02",
-      description: "위치정보 사업자 정보를 관리하는 백오피스 시스템 구축",
+      description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
-        "Soft Delete 패턴으로 실수 삭제 데이터 10건 이상 복구, 데이터 무결성 100% 유지",
-        "JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)",
-        "Alembic 마이그레이션 자동화로 스키마 변경 시간 80% 단축",
-        "GitLab CI/CD 파이프라인 구축 및 무중단 배포"
+        "위치정보 사업자 관리 백오피스 기능 설계 및 API 개발",
+        "레거시 코드 리팩토링을 통한 구조 개선 및 유지보수성 향상",
+        "사용자 요구사항 기반 신규 비즈니스 로직 구현 및 기능 고도화",
+        "JWT 기반 인증 및 RBAC 권한 체계(슈퍼관리자/일반관리자) 정립",
+        "PostgreSQL / NoSQL 데이터베이스 유지보수 및 관리",
+        "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
     {
@@ -72,13 +75,13 @@ export const siteConfig = {
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API - 1인 프로젝트",
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
       bulletPoints: [
-        "Redis 캐싱 + 복합 인덱스로 쿼리 성능 84% 향상 (500ms → 80ms)",
-        "자주 조회되는 통계 데이터 캐싱으로 DB 부하 감소",
-        "JUnit 기반 테스트 커버리지 70% 이상 유지",
-        "120+ 테스트 케이스 작성으로 안정적인 코드 품질 확보",
-        "JWT + Redis 토큰 블랙리스트로 보안 강화",
+        "월별 소비 패턴 분석 기반 맞춤형 예산 추천 로직 설계 및 구현",
+        "Redis 캐싱 + 복합 인덱스 설계로 통계 조회 성능 84% 개선 (500ms → 80ms)",
+        "자주 조회되는 통계 데이터 캐싱 전략 적용으로 DB 부하 최소화",
+        "JWT + Redis 토큰 블랙리스트 구조 설계로 인증 보안 강화",
         "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현",
-        "예산 초과 시 실시간 알림 기능 개발"
+        "예산 초과 시 실시간 알림 기능 개발로 사용자 피드백 루프 구축",
+        "JUnit 기반 120+ 테스트 케이스 작성 및 테스트 커버리지 70% 이상 유지"
       ],
     },
   ],
