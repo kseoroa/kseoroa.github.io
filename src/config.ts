@@ -90,7 +90,7 @@ export const siteConfig = {
       title: "실시간 통신 시스템 구축",
       dateRange: "2025.01 ~ 2025.10",
       bullets: [
-        "WebSocket + Redis Pub/Sub 기반 실시간 통신 구조 설계",
+        "WebSocket 기반 실시간 통신 구조 설계",
         "Heartbeat 메커니즘으로 연결 끊김 3초 이내 자동 재연결 구현",
         "메시지 유실률 0.1% 이하 달성"
       ]
