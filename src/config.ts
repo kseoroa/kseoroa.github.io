@@ -21,15 +21,14 @@ export const siteConfig = {
 "이거 안 돼요" 대신 "이렇게 하면 되는데요?" 라고 말하는 개발자, 문제 앞에서 해결책을 먼저 찾는 개발자가 되고자 합니다.
      `,
 
-  skills: {
-      languages: "Python, Java, Kotlin",
-      frameworks: "FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate",
-      testing: "JUnit",
-      tools: "Git, Github, GitLab CI/CD, Gradle, IntelliJ IDEA, PyCharm",
-      Databases: "PostgreSQL, Redis, Docker, Kafka, AWS (EC2, RDS, S3), Linux",
-      communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger"
-  },
-  experience: [
+      skills: {
+        languages: "Python, Java, Kotlin",
+        frameworks: "FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate",
+        testing: "JUnit",
+        tools: "Git, Github, GitLab CI/CD, Gradle, IntelliJ IDEA, PyCharm",
+        infrastructure: "PostgreSQL, Redis, Docker, Kafka, AWS (EC2, RDS, S3), Linux",
+        communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger"
+    },  experience: [
     {
       company: "(주) HDS",
       title: "Junior BackEnd Developer",
