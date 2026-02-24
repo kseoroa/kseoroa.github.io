@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "백엔드 개발자 포트폴리오",
+  name: "Junior BackEnd Developer",
   image: "img/profile.jpg",
-  title: " 경기도 안양시     |     01.09.30",
+  title: " 경기도 안양시       |       01.09.30",
   accentColor: "#1d4ed8",
   social: {
     email: "pokj9800113@gmail.com",
