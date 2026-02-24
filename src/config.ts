@@ -1,8 +1,7 @@
 export const siteConfig = {
-  name: "KyongSeo Park",
+  name: "백엔드 개발자 포트폴리오",
   image: "img/profile.jpg",
-  title: "KyongSeo | 서버 백엔드 엔지니어",
-  description: "코드는 다른 개발자가 읽을 거라 생각하고 씁니다.",
+  title: " 경기도 안양시     |     01.09.30",
   accentColor: "#1d4ed8",
   social: {
     email: "pokj9800113@gmail.com",
