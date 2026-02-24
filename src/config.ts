@@ -31,16 +31,13 @@ export const siteConfig = {
         communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger"
     },  experience: [
     {
-      company: "(주) HDS",
-      title: "Junior BackEnd Developer",
-      dateRange: "2025.01 - 현재",
-      description: "기업부설연구소 - 실시간 관제 시스템 및 백오피스 구축",
+      company: "Junior BackEnd Developer",
+      title: "(주) HDS",
+      dateRange: "2025.01 - (재직중)",
+      description: "기업부설연구소 Backend 개발",
       bullets: [
-        "자체 보안 관제 시스템 'BlueCop' 위치정보 사업자 모듈 신규 구축",
-        "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 백엔드 개발 (정책 변경으로 종료)",
-        "WebSocket 기반 실시간 통신 인프라 구축",
-        "서비스 안정성 강화, 레거시 시스템 개선",
-        "테스트 코드 & 코드리뷰 & 아키텍처 개선 등 개발환경 개선"
+        "자체 보안 관제 시스템인 'BlueCop' 위치정보 사업자 모듈 신규 구축",
+        "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 서비스 개발 (정책 변경으로 종료)"
       ],
     },
   ],
@@ -78,7 +75,7 @@ export const siteConfig = {
       name: "개인 재무 관리 시스템",
       dateRange: "2025.09 - 2025.12",
       description:
-        "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API - 1인 프로젝트",
+        "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
       bulletPoints: [
         "월별 소비 패턴 분석 기반 맞춤형 예산 추천 로직 설계 및 구현",
