@@ -35,7 +35,7 @@ export const siteConfig = {
       dateRange: "2025.01 - (재직중)",
       description: "기업부설연구소 Backend 개발",
       bullets: [
-        "자체 보안 관제 시스템인 'BlueCop' 위치정보 사업자 모듈 신규 구축",
+        "자체 보안 관제 시스템인 'BlueCop' 레거시 개편 및 위치정보 사업자 모듈 신규 구축",
         "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 서비스 개발 (정책 변경으로 종료)"
       ],
     },
@@ -50,9 +50,7 @@ export const siteConfig = {
       bulletPoints: [
         "실시간 관제 시스템 백엔드 아키텍처 설계 및 핵심 API 개발",
         "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현",
-        "대용량 관제 데이터 처리를 위한 DB 스키마 설계 및 성능 최적화",
-        "WebSocket 기반 실시간 위치·이벤트 데이터 수신 및 저장 구조 구현",
-        "공통 모듈(인증, 권한, 로깅) 라이브러리화로 코드 재사용성 향상",
+        "실시간 관제 이벤트 로그 테이블 저장 구현",
         "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
@@ -63,11 +61,9 @@ export const siteConfig = {
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
         "위치정보 사업자 관리 백오피스 기능 설계 및 API 개발",
-        "레거시 코드 리팩토링을 통한 구조 개선 및 유지보수성 향상",
+        "기존 시스템의 노후화된 기능 -> FastAPI 기반 레거시 개편 참여",
         "사용자 요구사항 기반 신규 비즈니스 로직 구현 및 기능 고도화",
-        "JWT 기반 인증 및 RBAC 권한 체계(슈퍼관리자/일반관리자) 정립",
-        "PostgreSQL / NoSQL 데이터베이스 유지보수 및 관리",
-        "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
+        "위치정보 사업자 지위 획득을 위한 개인위치정보 DB 암호화 및 RBAC 기능 구현 참여"
       ],
     },
     {
@@ -78,60 +74,39 @@ export const siteConfig = {
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
       bulletPoints: [
         "월별 소비 패턴 분석 기반 맞춤형 예산 추천 로직 설계 및 구현",
-        "Redis 캐싱 + 복합 인덱스 설계로 통계 조회 성능 84% 개선 (500ms → 80ms)",
-        "자주 조회되는 통계 데이터 캐싱 전략 적용으로 DB 부하 최소화",
         "JWT + Redis 토큰 블랙리스트 구조 설계로 인증 보안 강화",
         "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현",
-        "예산 초과 시 실시간 알림 기능 개발로 사용자 피드백 루프 구축",
         "JUnit 기반 120+ 테스트 케이스 작성 및 테스트 커버리지 70% 이상 유지"
       ],
     },
   ],
   capabilities: [
     {
-      title: "실시간 통신 시스템 구축",
-      dateRange: "2025.01 ~ 2025.10",
+      title: "실시간 데이터 처리 및 DB 최적화",
       bullets: [
-        "WebSocket 기반 실시간 통신 구조 설계",
-        "다중 서버 환경에서도 실시간 이벤트 동기화 완벽 구현",
-        "메시지 유실률 0.1% 이하 달성"
-      ]
-    },
-    {
-      title: "데이터베이스 성능 최적화",
-      dateRange: "2025.01 ~ 2025.10",
-      bullets: [
-        "복합 인덱스 최적화로 100만 건 로그 조회 성능 80% 개선 (5초 → 1초)",
-        "Redis 캐싱 쿼리 성능 84% 향상 (500ms → 80ms)",
-        "Soft Delete 패턴으로 실수 삭제 데이터 10건 이상 복구, 데이터 무결성 100% 유지"
+        "WebSocket 핸들러를 통해 수집된 초당 다량의 관제 이벤트(출입, 화재, 비상 알람)를 PostgreSQL 로그 시스템으로 적재하는 프로세스 구현",
+        "수집된 실시간 데이터를 PostgreSQL 로그 테이블에 안정적으로 기록하는 데이터 파이프라인 구현"
       ]
     },
     {
       title: "견고한 보안 및 권한 관리 체계",
-      dateRange: "2025.01 ~ 2025.10",
       bullets: [
-        "JWT + RBAC 권한 관리 체계 구현 (슈퍼관리자/일반관리자)",
-        "JWT + Redis 토큰 블랙리스트로 보안 강화",
-        "공통 모듈(인증, 권한, 로깅) 라이브러리화"
+        "JWT 및 RBAC를 결합한 세분화된 관리자 권한 체계 구현",
+        "Swagger UI 자동화를 통한 API 명세 표준화 및 프런트엔드 협업 효율화"
       ]
     },
     {
-      title: "CI/CD 및 인프라 자동화",
-      dateRange: "2025.01 ~ 2025.10",
+      title: "CI/CD 인프라 및 무중단 배포 자동화",
       bullets: [
-        "Alembic 마이그레이션 자동화로 60회 이상 스키마 변경 충돌 zero",
-        "GitLab CI/CD 파이프라인 구축 및 무중단 배포",
-        "Docker + AWS 기반 개발/운영 환경 일원화",
-        "Swagger UI로 실시간 API 문서 제공"
+        "Docker를 이용한 로컬 및 AWS 환경 일원화로 '환경 차이'로 인한 오류 방지",
+        "GitLab CI/CD 파이프라인과 Alembic 마이그레이션 자동화를 통해 팀 내 스키마 충돌 방지 및 배포 안정성 확보"
       ]
     },
     {
-      title: "테스트 주도 개발",
-      dateRange: "2025.10 ~ 2026.01",
+      title: "레거시 시스템 현대화 및 기능 고도화",
       bullets: [
-        "JUnit 기반 테스트 커버리지 70% 이상",
-        "120+ 테스트 케이스 작성으로 안정적인 코드 품질 유지",
-        "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현"
+        "기존 레거시 코드 -> FastAPI 기반 기능별 모듈화 진행",
+        "위치정보 사업자 요건 준수를 위한 개인위치정보 DB 암호화 및 RBAC(권한 기반 접근 제어) 기능 구현 참여"
       ]
     }
   ],
@@ -141,7 +116,7 @@ export const siteConfig = {
       dateRange: "2020.03 - 2025.02",
       achievements: [
         "정보통신공학과 학사",
-        "학점: 4.19/4.5",
+        "학점: 4.19/4.5 (전공 4.3/4.5)",
       ]
     },
     {
