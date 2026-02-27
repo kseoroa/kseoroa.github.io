@@ -33,10 +33,12 @@ export const siteConfig = {
       company: "Junior BackEnd Developer",
       title: "(주) HDS",
       dateRange: "2025.01 - (재직중)",
-      description: "기업부설연구소 Backend 개발",
+      description: "연매출 1000억의 중견 보안 기업 - 기업부설연구소 Backend 개발",
       bullets: [
         "자체 보안 관제 시스템인 'BlueCop' 레거시 개편 및 위치정보 사업자 모듈 신규 구축",
-        "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 서비스 개발 (정책 변경으로 종료)"
+        "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 서비스 개발 (정책 변경으로 종료)",
+        "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현" +
+        "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
   ],
@@ -50,7 +52,8 @@ export const siteConfig = {
       bulletPoints: [
         "실시간 관제 시스템 백엔드 아키텍처 설계 및 핵심 API 개발",
         "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현",
-        "실시간 관제 이벤트 로그 테이블 저장 구현",
+        "시스템 운영 효율화를 위한 관리자(Back-office) 모듈 구축",
+        "실시간 이벤트 로그 저장 로직 구축",
         "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
@@ -84,7 +87,7 @@ export const siteConfig = {
     {
       title: "실시간 데이터 처리 및 DB 최적화",
       bullets: [
-        "WebSocket 핸들러를 통해 수집된 초당 다량의 관제 이벤트(출입, 화재, 비상 알람)를 PostgreSQL 로그 시스템으로 적재하는 프로세스 구현",
+        "WebSocket 핸들러를 통해 수집된 초당 다량의 관제 이벤트(출입, 화재, 비상 알람) ->  PostgreSQL 로그 시스템으로 적재하는 프로세스 구현",
         "수집된 실시간 데이터를 PostgreSQL 로그 테이블에 안정적으로 기록하는 데이터 파이프라인 구현"
       ]
     },
@@ -99,7 +102,7 @@ export const siteConfig = {
       title: "CI/CD 인프라 및 무중단 배포 자동화",
       bullets: [
         "Docker를 이용한 로컬 및 AWS 환경 일원화로 '환경 차이'로 인한 오류 방지",
-        "GitLab CI/CD 파이프라인과 Alembic 마이그레이션 자동화를 통해 팀 내 스키마 충돌 방지 및 배포 안정성 확보"
+        "GitLab CI/CD 파이프라인과 Alembic 마이그레이션 자동화를 통해 팀 내 스키마 충돌 방지"
       ]
     },
     {
