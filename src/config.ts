@@ -35,10 +35,8 @@ export const siteConfig = {
       dateRange: "2025.01 - (재직중)",
       description: "연매출 1000억의 중견 보안 기업 - 기업부설연구소 Backend 개발",
       bullets: [
-        "자체 보안 관제 시스템인 'BlueCop' 레거시 개편 및 위치정보 사업자 모듈 신규 구축",
-        "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 서비스 개발 (정책 변경으로 종료)",
-        "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현" +
-        "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
+        "자체 보안 관제 솔루션 'BlueCop' 및 APEC 2025 정상회의 통합 관제 시스템 백엔드 구축",
+        "FastAPI 기반 비동기 아키텍처 도입을 통한 레거시 개편 및 시스템 성능 최적화"
       ],
     },
   ],
@@ -50,10 +48,10 @@ export const siteConfig = {
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)',
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
-        "실시간 관제 시스템 백엔드 아키텍처 설계 및 핵심 API 개발",
+        "현장 요원용 모바일 앱과 연동되는 RESTful API 설계 및 개발",
         "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현",
-        "시스템 운영 효율화를 위한 관리자(Back-office) 모듈 구축",
-        "실시간 이벤트 로그 저장 로직 구축",
+        "공지사항, 권한 관리, 시스템 설정 등 관제 센터 운영에 필수적인 관리자 기능 개발",
+        "관제 현장에서 발생하는 이벤트 로그의 실시간 저장 로직 구축",
         "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
@@ -63,10 +61,10 @@ export const siteConfig = {
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
-        "위치정보 사업자 관리 백오피스 기능 설계 및 API 개발",
-        "기존 시스템의 노후화된 기능 -> FastAPI 기반 레거시 개편 참여",
-        "사용자 요구사항 기반 신규 비즈니스 로직 구현 및 기능 고도화",
-        "위치정보 사업자 지위 획득을 위한 개인위치정보 DB 암호화 및 RBAC 기능 구현 참여"
+        "위치정보 사업자 관리 및 현장 요원 상태 모니터링을 위한 관리자 API 세트 구축",
+        "기존 노후 시스템을 FastAPI/SQLAlchemy 기반으로 재설계하여 코드 유지보수성 및 API 응답 속도 개선",
+        "iOS/Android 단말기 특성을 고려한 멀티파트 파일 업로드/다운로드 API 최적화",
+          "SQLAlchemy/Alembic을 활용하여 파편화된 위치정보 데이터 스키마를 체계적으로 재구조화"
       ],
     },
     {
@@ -76,9 +74,9 @@ export const siteConfig = {
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
       bulletPoints: [
-        "월별 소비 패턴 분석 기반 맞춤형 예산 추천 로직 설계 및 구현",
-        "JWT + Redis 토큰 블랙리스트 구조 설계로 인증 보안 강화",
-        "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현",
+        "사용자 소비 패턴 분석을 통한 카테고리별 예산 자동 추천 알고리즘 구현",
+        "JWT와 Redis를 결합한 Token Blacklist 구조 설계로 로그아웃 및 보안 세션 관리 강화",
+        "Spring Scheduler를 활용한 일간 지출 리포트 자동 생성 및 메일링 시스템 구축",
         "JUnit 기반 120+ 테스트 케이스 작성 및 테스트 커버리지 70% 이상 유지"
       ],
     },
@@ -101,14 +99,13 @@ export const siteConfig = {
     {
       title: "CI/CD 인프라 및 무중단 배포 자동화",
       bullets: [
-        "Docker를 이용한 로컬 및 AWS 환경 일원화로 '환경 차이'로 인한 오류 방지",
-        "GitLab CI/CD 파이프라인과 Alembic 마이그레이션 자동화를 통해 팀 내 스키마 충돌 방지"
+        "Docker를 이용한 로컬 및 AWS 환경 일원화로 '환경 차이'로 인한 오류 방지"
       ]
     },
     {
       title: "레거시 시스템 현대화 및 기능 고도화",
       bullets: [
-        "기존 레거시 코드 -> FastAPI 기반 기능별 모듈화 진행",
+        "기존 노후화된 레거시 코드 -> FastAPI 기반 기능별 모듈 구조 개편 진행",
         "위치정보 사업자 요건 준수를 위한 개인위치정보 DB 암호화 및 RBAC(권한 기반 접근 제어) 기능 구현 참여"
       ]
     }
