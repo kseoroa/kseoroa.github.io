@@ -25,15 +25,16 @@ export const siteConfig = {
         tools: "Git, Github, GitLab CI/CD, Gradle, IntelliJ IDEA, PyCharm",
         infrastructure: "PostgreSQL, Redis, Docker, Kafka, AWS (EC2, RDS, S3), Linux",
         communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger"
-    },  experience: [
+    },
+  experience: [
     {
-      company: "Junior BackEnd Developer",
+      company: "Backend Developer (연구원)",
       title: "(주) HDS",
       dateRange: "2025.01 - (재직중)",
       description: "연매출 1000억의 중견 보안 기업 - 기업부설연구소 Backend 개발",
       bullets: [
-        "자체 보안 관제 솔루션 'BlueCop' 및 APEC 2025 정상회의 통합 관제 시스템 백엔드 구축",
-        "FastAPI 기반 비동기 아키텍처 도입을 통한 레거시 개편 및 시스템 성능 최적화"
+        "APEC 2025 통합 관제 시스템 및 'BlueCop' 솔루션의 핵심 API 아키텍처 설계 및 구축",
+        "FastAPI 비동기 스택 도입으로 레거시 시스템을 현대화하여 동시 처리량 및 시스템 응답 속도 최적화"
       ],
     },
   ],
@@ -45,10 +46,10 @@ export const siteConfig = {
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)',
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
-        "현장 요원용 모바일 앱과 연동되는 RESTful API 설계 및 개발",
-        "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현",
-        "공지사항, 권한 관리, 시스템 설정 등 관제 센터 운영에 필수적인 관리자 기능 개발",
-        "관제 현장에서 발생하는 이벤트 로그의 실시간 저장 로직 구축",
+        "실시간 현장 요원 위치 및 이벤트 로그 수집을 위한 고성능 RESTful API 개발",
+        "WebSocket을 활용한 실시간 이벤트 전송 및 PostgreSQL 비동기 적재 파이프라인 구축",
+        "관리자 권한(RBAC) 체계 구현을 통해 보안 요구사항 충족 및 시스템 설정 자동화",
+        "다양한 클라이언트(모바일/Web) 대응을 위한 인터페이스 설계 및 문서화 주도",
         "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
@@ -61,7 +62,7 @@ export const siteConfig = {
         "위치정보 사업자 관리 및 현장 요원 상태 모니터링을 위한 관리자 API 세트 구축",
         "기존 노후 시스템을 FastAPI/SQLAlchemy 기반으로 재설계하여 코드 유지보수성 및 API 응답 속도 개선",
         "iOS/Android 단말기 특성을 고려한 멀티파트 파일 업로드/다운로드 API 최적화",
-          "SQLAlchemy/Alembic을 활용하여 파편화된 위치정보 데이터 스키마를 체계적으로 재구조화"
+        "SQLAlchemy/Alembic을 활용하여 파편화된 위치정보 데이터 스키마를 체계적으로 재구조화"
       ],
     },
     {
@@ -71,10 +72,11 @@ export const siteConfig = {
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
       bulletPoints: [
-        "사용자 소비 패턴 분석을 통한 카테고리별 예산 자동 추천 알고리즘 구현",
-        "JWT와 Redis를 결합한 Token Blacklist 구조 설계로 로그아웃 및 보안 세션 관리 강화",
-        "Spring Scheduler를 활용한 일간 지출 리포트 자동 생성 및 메일링 시스템 구축",
-        "JUnit 기반 120+ 테스트 케이스 작성 및 테스트 커버리지 70% 이상 유지"
+        "Redis 캐싱 전략을 도입하여 통계 및 예산 추천 API 응답 속도를 평균 18ms로 단축 (기존 대비 약 3.6배 성능 개선)",
+        "k6를 활용한 시나리오 기반 부하 테스트를 수행하여 동시 접속 환경에서의 시스템 임계치 및 병목 구간 파악/개선",
+        "JWT와 Redis를 결합한 Token Blacklist 구조를 설계하여 안전한 로그아웃 처리 및 보안 세션 관리 로직 강화",
+        "Spring Scheduler를 활용한 배치 프로세스를 구축하여 일간 지출 리포트 자동 생성 및 메일링 시스템 구현",
+        "사용자 소비 패턴 데이터 통계 분석을 통한 카테고리별 예산 자동 추천 알고리즘 구현"
       ],
     },
   ],
