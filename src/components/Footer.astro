@@ -105,6 +105,16 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             >About</a
           >
           {
+            hasProjects && (
+              <a
+                href="#projects"
+                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Projects
+              </a>
+            )
+          }
+          {
             hasExperience && (
               <a
                 href="#experience"
@@ -113,26 +123,6 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 Experience
               </a>
             )
-          }
-          {
-                      hasProjects && (
-                        <a
-                          href="#projects"
-                          class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-                        >
-                          Projects
-                        </a>
-                      )
-          }
-          {
-                                          hasCapability && (
-                                            <a
-                                              href="#Capability"
-                                              class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-                                            >
-                                              Capability
-                                            </a>
-                                          )
           }
           {
             hasEducation && (
