@@ -19,12 +19,12 @@ export const siteConfig = {
   `,
 
       skills: {
-        languages: "Python, Java, Kotlin",
-        frameworks: "FastAPI, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, SQLAlchemy, Alembic, JPA, Hibernate",
-        testing: "JUnit",
-        tools: "Git, Github, GitLab CI/CD, Gradle, IntelliJ IDEA, PyCharm",
-        infrastructure: "PostgreSQL, Redis, Docker, Kafka, AWS (EC2, RDS, S3), Linux",
-        communication: "WebSocket, Redis Pub/Sub, RESTful API, Swagger"
+        Languages: "Python, Java, Kotlin",
+        Frameworks: "FastAPI, SQLAlchemy, Alembic, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, Hibernate, JPA",
+        Testing: "JUnit",
+        Tools: "Git, Github, GitLab, GitLab CI/CD, Gradle, IntelliJ IDEA, PyCharm",
+        Infrastructure: "PostgreSQL, Redis, Kafka, Redis Pub/Sub, AWS (EC2, RDS, S3), Docker, Linux",
+        Communication: "RESTful API, WebSocket, Swagger (OpenAPI)"
     },
   experience: [
     {
