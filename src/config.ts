@@ -32,7 +32,7 @@ export const siteConfig = {
       description: "연매출 1000억의 중견 보안 기업 - 기업부설연구소 Backend 개발",
       bullets: [
         "APEC 2025 통합 관제 시스템 및 'BlueCop' 솔루션의 핵심 API 아키텍처 설계 및 구축",
-        "FastAPI 비동기 스택 도입으로 레거시 시스템을 현대화하여 동시 처리량 및 시스템 응답 속도 최적화"
+        "FastAPI 비동기 스택 도입으로 레거시 시스템 현대화하여 동시 처리량 및 시스템 응답 속도 최적화"
       ],
     },
   ],
@@ -44,11 +44,11 @@ export const siteConfig = {
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)',
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
-        "실시간 현장 요원 위치 및 이벤트 로그 수집을 위한 고성능 RESTful API 개발",
-        "WebSocket을 활용한 실시간 이벤트 전송 및 PostgreSQL 비동기 적재 파이프라인 구축",
-        "관리자 권한(RBAC) 체계 구현을 통해 보안 요구사항 충족 및 시스템 설정 자동화",
+        "실시간 현장 요원 위치 및 이벤트 로그 수집을 위한 RESTful API 개발",
+        "WebSocket 실시간 이벤트 전송 및 비동기 DB(PostgreSQL) 적재 최적화",
+        "RBAC 기반 권한 관리 체계 구현 및 시스템 설정 자동화",
         "다양한 클라이언트(모바일/Web) 대응을 위한 인터페이스 설계 및 문서화 주도",
-        "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
+        "코드 리뷰 및 사내 기술 스터디 리딩을 통한 개발 문화 개선"
       ],
     },
     {
@@ -58,9 +58,8 @@ export const siteConfig = {
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
         "위치정보 사업자 관리 및 현장 요원 상태 모니터링을 위한 관리자 API 세트 구축",
-        "기존 노후 시스템을 FastAPI/SQLAlchemy 기반으로 재설계하여 코드 유지보수성 및 API 응답 속도 개선",
-        "iOS/Android 단말기 특성을 고려한 멀티파트 파일 업로드/다운로드 API 최적화",
-        "SQLAlchemy/Alembic을 활용하여 파편화된 위치정보 데이터 스키마를 체계적으로 재구조화"
+        "노후 시스템 FastAPI 기반 비동기 구조 재설계하여 동시성 처리 성능 및 시스템 확장성 개선",
+        "iOS/Android 단말기 특성 멀티파트 파일 업로드/다운로드 API 최적화"
       ],
     },
     {
@@ -70,10 +69,10 @@ export const siteConfig = {
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
       bulletPoints: [
-        "Redis 캐싱 전략을 도입하여 통계 및 예산 추천 API 응답 속도를 평균 18ms로 단축 (기존 대비 약 3.6배 성능 개선)",
-        "k6를 활용한 시나리오 기반 부하 테스트를 수행하여 동시 접속 환경에서의 시스템 임계치 및 병목 구간 파악/개선",
-        "JWT와 Redis를 결합한 Token Blacklist 구조를 설계하여 안전한 로그아웃 처리 및 보안 세션 관리 로직 강화",
-        "Spring Scheduler를 활용한 배치 프로세스를 구축하여 일간 지출 리포트 자동 생성 및 메일링 시스템 구현",
+        "통계 및 예산 추천 API 응답 속도 평균 18ms 단축 (기존 대비 약 3.6배 성능 개선)",
+        "k6 부하 테스트 기반 동시 접속 환경의 병목 구간 파악/개선",
+        "JWT & Redis Token Blacklist 구조를 설계하여 안전한 로그아웃 및 보안 세션 관리 로직 고도화",
+        "Spring Scheduler 기반 배치 프로세스를 구축하여 리포트 생성 및 메일링 서비스 자동화",
         "사용자 소비 패턴 데이터 통계 분석을 통한 카테고리별 예산 자동 추천 알고리즘 구현"
       ],
     },
@@ -83,31 +82,31 @@ export const siteConfig = {
       title: "대규모 트래픽 처리 및 시스템 성능 최적화",
       bullets: [
         "Redis 캐싱 도입을 통해 API 응답 속도를 평균 18ms로 단축, 기존 대비 약 3.6배의 성능 개선 달성",
-        "k6를 활용한 부하 테스트로 시스템 임계치를 파악하고, 병목 지점(DB I/O) 개선을 통한 안정적 서비스 운영",
-        "WebSocket 핸들러를 통해 초당 발생하는 대량의 관제 이벤트(비상 알람 등)를 PostgreSQL에 안정적으로 적재하는 비동기 파이프라인 구축"
+        "k6 부하 테스트 기반 동시 접속 환경의 병목 구간 파악/개선",
+        "WebSocket 핸들러를 통해 초당 발생하는 대량의 관제 이벤트(비상 알람 등)를 비동기 DB(PostgreSQL) 적재 최적화"
       ]
     },
     {
       title: "객체지향 원칙 기반의 견고한 아키텍처 설계",
       bullets: [
-        "Layered Architecture 및 DDD 개념을 도입하여 비즈니스 로직과 인프라 계층을 분리, 유지보수성 극대화",
-        "Spring Security와 JWT를 결합한 무상태(Stateless) 인증 체계 및 Redis 기반 Token Blacklist로 보안성 강화",
-        "반복되는 데이터 변환 로직을 Mapper 패턴으로 구조화하여 코드 중복 제거 및 가독성 향상"
+        "Layered Architecture 및 DDD 개념 도입하여 비즈니스 로직과 인프라 계층 분리, 유지보수성 극대화",
+        "Spring Security + JWT 기반 무상태 인증 설계, Redis Token Blacklist 보안 세션 관리 강화",
+        "Mapper 패턴 도입하여 반복적인 데이터 변환 로직 구조화, 코드 중복 제거 및 가독성 향상"
       ]
     },
     {
       title: "레거시 현대화 및 개발자 경험 개선",
       bullets: [
-        "노후화된 레거시 시스템을 FastAPI 기반 비동기 구조로 재설계하여 동시성 처리 성능 향상",
-        "개인위치정보법 준수를 위한 DB 암호화 및 RBAC(권한 기반 접근 제어)를 설계하여 컴플라이언스 리스크 해소",
-        "Swagger UI 및 Notion API 명세 자동화를 주도하여 프론트엔드 및 팀원 간 협업 효율성 제고"
+        "노후 시스템 FastAPI 기반 비동기 구조 재설계하여 동시성 처리 성능 및 시스템 확장성 개선",
+        "개인위치정보법 준수를 위한 DB 암호화 및 RBAC 설계",
+        "Swagger UI 및 Notion API 명세 자동화 주도하여 프론트엔드 및 팀원 간 협업 효율성 상승"
       ]
     },
     {
       title: "인프라 자동화 및 테스트 기반의 안정적 배포",
       bullets: [
         "Docker 기반 컨테이너화로 개발-스테이징-운영 환경의 일관성을 확보하고 배포 오류 0% 달성",
-        "JUnit을 활용한 120개 이상의 테스트 케이스 작성을 통해 비즈니스 로직의 정밀도 검증 및 리팩토링 안정성 확보"
+        "JUnit 기반 120개 이상의 단위 테스트 케이스 작성 및 정밀도 검증"
       ]
     }
   ],
