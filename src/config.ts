@@ -31,8 +31,8 @@ export const siteConfig = {
       dateRange: "2025.01 - (재직중)",
       description: "연매출 1000억의 중견 보안 기업 - 기업부설연구소 Backend 개발",
       bullets: [
-        "APEC 2025 통합 관제 시스템 및 'BlueCop' 솔루션의 핵심 API 아키텍처 설계 및 구축",
-        "FastAPI 비동기 스택 도입으로 레거시 시스템 현대화하여 동시 처리량 및 시스템 응답 속도 최적화"
+        "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 백엔드 개발 (정책 변경으로 종료)",
+        "사내 보안 관제 시스템 '블루캅' 내 사업자 관리 백엔드 설계 및 레거시 개편"
       ],
     },
   ],
@@ -45,9 +45,9 @@ export const siteConfig = {
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
         "실시간 현장 요원 위치 및 이벤트 로그 수집을 위한 RESTful API 개발",
-        "WebSocket 실시간 이벤트 전송 및 비동기 DB(PostgreSQL) 적재 최적화",
-        "RBAC 기반 권한 관리 체계 구현 및 시스템 설정 자동화",
-        "다양한 클라이언트(모바일/Web) 대응을 위한 인터페이스 설계 및 문서화 주도",
+        "공지사항, 권한 관리, 시스템 설정 등 관제 센터 운영에 필수적인 관리자 기능 개발",
+        "관제 현장에서 발생하는 이벤트 로그의 실시간 저장 로직 구축",
+        "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현",
         "코드 리뷰 및 사내 기술 스터디 리딩을 통한 개발 문화 개선"
       ],
     },
@@ -57,8 +57,8 @@ export const siteConfig = {
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
       bulletPoints: [
-        "위치정보 사업자 관리 및 현장 요원 상태 모니터링을 위한 관리자 API 세트 구축",
-        "노후 시스템 FastAPI 기반 비동기 구조 재설계하여 동시성 처리 성능 및 시스템 확장성 개선",
+        "위치정보 사업자 관리 및 현장 요원 상태 모니터링을 위한 관리자 API 개발",
+        "기존 노후 시스템을 FastAPI/SQLAlchemy 기반으로 재설계하여 코드 유지보수성 및 API 응답 속도 개선",
         "iOS/Android 단말기 특성 멀티파트 파일 업로드/다운로드 API 최적화"
       ],
     },
@@ -72,8 +72,7 @@ export const siteConfig = {
         "통계 및 예산 추천 API 응답 속도 평균 18ms 단축 (기존 대비 약 3.6배 성능 개선)",
         "k6 부하 테스트 기반 동시 접속 환경의 병목 구간 파악/개선",
         "JWT & Redis Token Blacklist 구조를 설계하여 안전한 로그아웃 및 보안 세션 관리 로직 고도화",
-        "Spring Scheduler 기반 배치 프로세스를 구축하여 리포트 생성 및 메일링 서비스 자동화",
-        "사용자 소비 패턴 데이터 통계 분석을 통한 카테고리별 예산 자동 추천 알고리즘 구현"
+        "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현"
       ],
     },
   ],
