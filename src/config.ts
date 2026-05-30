@@ -55,7 +55,7 @@ export const siteConfig = {
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
       skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
       bulletPoints: [
-        "iOS/Android 모바일 단말기의 네트워크 불안정 및 대용량 멀티파트 파일 업로드 시 발생하는 인스턴스 메모리 병목 문제를 해결하기 위해 AWS S3 Presigned URL 방식을 도입하여 업로드 API 안정성 확보",
+        "iOS/Android 대용량 멀티파트 파일 업로드 시 인스턴스 메모리 병목 문제를 해결하기 위해 AWS S3 Presigned URL 방식 도입",
         "기존 노후 시스템을 FastAPI/SQLAlchemy 기반으로 재설계하여 코드 유지보수성",
         "백엔드 도메인 서비스 전반에 대한 예외 처리 핸들러(GlobalExceptionHandler) 표준 정립 및 api 명세서 연동"
       ],
@@ -68,7 +68,7 @@ export const siteConfig = {
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
       bulletPoints: [
         "반복적인 통계 쿼리로 인한 DB 부하를 예방하고자 Redis 캐시 계층을 도입하여 API 응답 시간을 기존 대비 3.6배 개선 (평균 65ms -> 18ms 단축)",
-        "k6 부하 테스트 도구를 사용하여 가상 트래픽 시나리오 설계 및 시스템 병목 구간) 식별하여 튜닝 진행",
+        "k6 부하 테스트 도구를 사용하여 가상 트래픽 시나리오 설계 및 시스템 병목 구간 식별 및 튜닝 진행",
         "JWT & Redis Token Blacklist 구조를 설계하여 안전한 로그아웃 및 보안 세션 관리 로직 고도화",
         "JUnit을 활용한 120개 이상의 단위 테스트 및 통합 테스트 작성"
       ],
@@ -80,13 +80,13 @@ export const siteConfig = {
       bullets: [
         "Redis 캐싱 도입을 통해 API 응답 속도를 평균 18ms로 단축, 기존 대비 약 3.6배의 성능 개선 달성",
         "k6 부하 테스트 기반 동시 접속 환경의 병목 구간 파악/개선",
-        "WebSocket 핸들러를 통해 초당 발생하는 대량의 관제 이벤트(비상 알람 등)를 비동기 DB(PostgreSQL) 적재 최적화"
+        "WebSocket 핸들러를 통해 초당 발생하는 대량의 관제 이벤트(비상 알람 등)를 비동기 DB 적재 최적화"
       ]
     },
     {
       title: "인프라 및 모니터링",
       bullets: [
-        "Layered Architecture 및 DDD 개념 도입하여 비즈니스 로직과 인프라 계층 분리, 유지보수성 극대화",
+        "Layered Architecture 및 DDD 개념 도입하여 비즈니스 로직과 인프라 계층 분리",
         "Spring Security + JWT 기반 무상태 인증 설계, Redis Token Blacklist 보안 세션 관리 강화",
         "Mapper 패턴 도입하여 반복적인 데이터 변환 로직 구조화, 코드 중복 제거 및 가독성 향상"
       ]
@@ -96,7 +96,7 @@ export const siteConfig = {
       bullets: [
         "노후 시스템 FastAPI 기반 비동기 구조 재설계하여 동시성 처리 성능 및 시스템 확장성 개선",
         "개인위치정보법 준수를 위한 DB 암호화 및 RBAC 설계",
-        "Swagger UI 및 Notion API 명세 자동화 주도하여 프론트엔드 및 팀원 간 협업 효율성 상승"
+        "Swagger UI 및 Notion API 명세 자동화 주도화"
       ]
     },
     {
@@ -113,7 +113,7 @@ export const siteConfig = {
       dateRange: "2020.03 - 2025.02",
       achievements: [
         "정보통신공학과 학사",
-        "학점: 4.19/4.5 (전공 4.3/4.5)",
+        "학점 4.19/4.5 (전공 4.3/4.5)",
       ]
     },
     {
@@ -121,7 +121,7 @@ export const siteConfig = {
       dateRange: "2024.03 - 2024.09",
       achievements: [
         "Java, Spring Boot, MySQL, AWS 기반 백엔드 개발 학습",
-          "CS지식 및 알고리즘 문제 해결 능력 향상",
+        "CS지식 및 알고리즘 문제 해결 능력 향상",
       ],
     },
     {
