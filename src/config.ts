@@ -18,8 +18,10 @@ export const siteConfig = {
 
   skills: {
         Languages: "Python, Java, Kotlin",
-        Frameworks: "FastAPI, Spring Boot, Docker, AWS",
+        Frameworks: "FastAPI, SQLAlchemy, Spring Boot, Spring MVC, Spring Data JPA",
+        Infra: "AWS, Docker, Linux",
         Databases: "PostgreSQL, Redis, Kafka"
+
   },
   experience: [
     {
