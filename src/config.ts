@@ -7,23 +7,21 @@ export const siteConfig = {
     email: "pokj9800113@gmail.com",
     github: "https://github.com/kyongseo",
   },
-  aboutMe: `안정적인 시스템 설계와 팀의 생산성 향상을 고민하는 주니어 백엔드 개발자입니다.
+  aboutMe: `"명확한 변수명과 간결한 함수로 코드 자체가 설명서가 되는 개발"을 지향합니다.
   
   (주)HDS에서 Python, Java 기반의 실시간 관제 시스템 및 위치정보 관리 시스템을 개발했습니다.
     
-  "코드는 읽기 쉬워야 한다"는 원칙 아래, 주석 없이도 의도가 드러나는 명확한 변수명과 간결한 함수 작성을 지향합니다. 선배 개발자들의 피드백을 빠르게 흡수하며 객체지향적인 설계와 클린 코드의 실무적 적용을 익히고 있습니다.
-
-  테스트 코드를 개발의 당연한 한 과정으로 여깁니다. 120개 이상의 단위 테스트를 작성하며 코드의 안정성을 직접 체감했고, 이는 과감한 리팩토링과 시스템 고도화를 가능하게 하는 자신감의 원천이 되었습니다.
+  "코드는 읽기 쉬워야 한다"는 원칙 아래, 주석 없이도 의도가 드러나는 명확한 변수명과 간결한 함수 작성을 지향합니다.
+  
+  안정성을 위한 테스트 코드를 개발의 당연한 과정으로 여깁니다. 120개 이상의 단위 테스트를 직접 작성하며 리팩토링 안정성을 확보했습니다.
   `,
 
-      skills: {
+  skills: {
         Languages: "Python, Java, Kotlin",
-        Frameworks: "FastAPI, SQLAlchemy, Alembic, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, Hibernate, JPA",
-        Testing: "JUnit",
-        Tools: "Git, Github, GitLab, GitLab CI/CD, Gradle, IntelliJ IDEA, PyCharm",
-        Infrastructure: "PostgreSQL, Redis, Kafka, Redis Pub/Sub, AWS (EC2, RDS, S3), Docker, Linux",
-        Communication: "RESTful API, WebSocket, Swagger (OpenAPI)"
-    },
+        Frameworks: "FastAPI, Spring Boot",
+        Databases: "PostgreSQL, Redis, Kafka",
+        Infra: " AWS (S3), Docker"
+  },
   experience: [
     {
       company: "Backend Developer (연구원)",
@@ -38,16 +36,16 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: 'APEC 2025 관제 시스템 개발 및 운영',
+      name: 'APEC 2025 관제 시스템 개발',
       dateRange: "2025.01 - 2025.10",
       description:
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)',
-      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
+      skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
       bulletPoints: [
         "실시간 현장 요원 위치 및 이벤트 로그 수집을 위한 RESTful API 개발",
-        "공지사항, 권한 관리, 시스템 설정 등 관제 센터 운영에 필수적인 관리자 기능 개발",
-        "관제 현장에서 발생하는 이벤트 로그의 실시간 저장 로직 구축",
-        "사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현",
+        "초당 대량으로 유입되는 실시간 요원 위치 데이터의 HTTP Overhead를 방지하기 위해 경량 아키텍처인 FastAPI를 채택하여 대용량 로그 수집 API를 안정적으로 서빙",
+        "복잡한 관제 화면의 Needs에 맞추어 관리자 권한별 동적 필터링 조회 로직 설계 및 페이징 기법 적용",
+        "Docker 기반 가상화 환경 구축을 주도하여 개발-스테이징-운영 환경 간 배포 정합성 100% 달성",
         "코드 리뷰 및 사내 기술 스터디 리딩을 통한 개발 문화 개선"
       ],
     },
@@ -55,30 +53,30 @@ export const siteConfig = {
       name: "블루캅 관제 시스템 위치정보 사업자 관리 백오피스",
       dateRange: "2025.01 - 2025.02",
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
-      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD", "Swagger"],
+      skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
       bulletPoints: [
-        "위치정보 사업자 관리 및 현장 요원 상태 모니터링을 위한 관리자 API 개발",
-        "기존 노후 시스템을 FastAPI/SQLAlchemy 기반으로 재설계하여 코드 유지보수성 및 API 응답 속도 개선",
-        "iOS/Android 단말기 특성 멀티파트 파일 업로드/다운로드 API 최적화"
+        "iOS/Android 모바일 단말기의 네트워크 불안정 및 대용량 멀티파트 파일 업로드 시 발생하는 인스턴스 메모리 병목 문제를 해결하기 위해 AWS S3 Presigned URL 방식을 도입하여 업로드 API 안정성 확보",
+        "기존 노후 시스템을 FastAPI/SQLAlchemy 기반으로 재설계하여 코드 유지보수성",
+        "백엔드 도메인 서비스 전반에 대한 예외 처리 핸들러(GlobalExceptionHandler) 표준 정립 및 api 명세서 연동"
       ],
     },
     {
-      name: "개인 재무 관리 시스템",
+      name: "개인 재무 관리 시스템 (Toy Project)",
       dateRange: "2025.09 - 2025.12",
       description:
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
-      skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "Spring Scheduler"],
+      skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
       bulletPoints: [
-        "통계 및 예산 추천 API 응답 속도 평균 18ms 단축 (기존 대비 약 3.6배 성능 개선)",
-        "k6 부하 테스트 기반 동시 접속 환경의 병목 구간 파악/개선",
+        "반복적인 통계 쿼리로 인한 DB 부하를 예방하고자 Redis 캐시 계층을 도입하여 API 응답 시간을 기존 대비 3.6배 개선 (평균 65ms -> 18ms 단축)",
+        "k6 부하 테스트 도구를 사용하여 가상 트래픽 시나리오 설계 및 시스템 병목 구간) 식별하여 튜닝 진행",
         "JWT & Redis Token Blacklist 구조를 설계하여 안전한 로그아웃 및 보안 세션 관리 로직 고도화",
-        "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현"
+        "JUnit을 활용한 120개 이상의 단위 테스트 및 통합 테스트 작성"
       ],
     },
   ],
   capabilities: [
     {
-      title: "대규모 트래픽 처리 및 시스템 성능 최적화",
+      title: "성능 최적화",
       bullets: [
         "Redis 캐싱 도입을 통해 API 응답 속도를 평균 18ms로 단축, 기존 대비 약 3.6배의 성능 개선 달성",
         "k6 부하 테스트 기반 동시 접속 환경의 병목 구간 파악/개선",
@@ -86,7 +84,7 @@ export const siteConfig = {
       ]
     },
     {
-      title: "객체지향 원칙 기반의 견고한 아키텍처 설계",
+      title: "인프라 및 모니터링",
       bullets: [
         "Layered Architecture 및 DDD 개념 도입하여 비즈니스 로직과 인프라 계층 분리, 유지보수성 극대화",
         "Spring Security + JWT 기반 무상태 인증 설계, Redis Token Blacklist 보안 세션 관리 강화",
@@ -102,7 +100,7 @@ export const siteConfig = {
       ]
     },
     {
-      title: "인프라 자동화 및 테스트 기반의 안정적 배포",
+      title: "테스트 및 코드 안정성",
       bullets: [
         "Docker 기반 컨테이너화로 개발-스테이징-운영 환경의 일관성을 확보하고 배포 오류 0% 달성",
         "JUnit 기반 120개 이상의 단위 테스트 케이스 작성 및 정밀도 검증"
