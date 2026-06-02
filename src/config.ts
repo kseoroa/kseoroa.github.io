@@ -44,9 +44,8 @@ export const siteConfig = {
       skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
       bulletPoints: [
         "실시간 현장 요원 위치 및 이벤트 로그 수집을 위한 RESTful API 개발",
-        "초당 대량으로 유입되는 실시간 요원 위치 데이터의 HTTP Overhead를 방지하기 위해 경량 아키텍처인 FastAPI를 채택하여 대용량 로그 수집 API를 안정적으로 서빙",
+        "실시간 요원 위치 로그 수집 API 개발",
         "복잡한 관제 화면의 Needs에 맞추어 관리자 권한별 동적 필터링 조회 로직 설계 및 페이징 기법 적용",
-        "Docker 기반 가상화 환경 구축을 주도하여 개발-스테이징-운영 환경 간 배포 정합성 100% 달성",
         "코드 리뷰 및 사내 기술 스터디 리딩을 통한 개발 문화 개선"
       ],
     },
@@ -56,7 +55,7 @@ export const siteConfig = {
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
       skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
       bulletPoints: [
-        "iOS/Android 대용량 멀티파트 파일 업로드 시 인스턴스 메모리 병목 문제를 해결하기 위해 AWS S3 Presigned URL 방식 도입",
+        "iOS/Android 대용량 멀티파트 파일 업로드 시 AWS S3 Presigned URL 방식 도입",
         "기존 노후 시스템을 FastAPI/SQLAlchemy 기반으로 재설계하여 코드 유지보수성",
         "백엔드 도메인 서비스 전반에 대한 예외 처리 핸들러(GlobalExceptionHandler) 표준 정립 및 api 명세서 연동"
       ],
@@ -68,7 +67,7 @@ export const siteConfig = {
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
       bulletPoints: [
-        "반복적인 통계 쿼리로 인한 DB 부하를 예방하고자 Redis 캐시 계층을 도입하여 API 응답 시간을 기존 대비 3.6배 개선 (평균 65ms -> 18ms 단축)",
+        "Redis 캐시 계층을 도입하여 API 응답 시간을 기존 대비 3.6배 개선 (평균 65ms -> 18ms 단축)",
         "k6 부하 테스트 도구를 사용하여 가상 트래픽 시나리오 설계 및 시스템 병목 구간 식별 및 튜닝 진행",
         "JWT & Redis Token Blacklist 구조를 설계하여 안전한 로그아웃 및 보안 세션 관리 로직 고도화",
         "JUnit을 활용한 120개 이상의 단위 테스트 및 통합 테스트 작성"
