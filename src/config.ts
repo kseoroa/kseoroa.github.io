@@ -7,8 +7,7 @@ export const siteConfig = {
     email: "pokj9800113@gmail.com",
     github: "https://github.com/kyongseo",
   },
-  aboutMe: `
-  "코드 자체가 설명서가 되는 개발"을 지향하는 백엔드 개발자입니다.
+  aboutMe: `"코드 자체가 설명서가 되는 개발"을 지향하는 백엔드 개발자입니다.
 
 (주)HDS에서 Python(FastAPI)과 Java(Spring Boot)를 주력으로 다루며 실시간 통합 관제 시스템 및 위치정보 백오피스 API 개발을 담당했습니다. 명확한 변수명과 간결한 메서드 설계를 통해 주석 없이도 의도가 드러나는 가독성 높은 코드를 작성하는 것을 원칙으로 삼고 있습니다.
 
