@@ -28,9 +28,9 @@ export const siteConfig = {
       company: "Backend Developer (연구원)",
       title: "(주) HDS",
       dateRange: "2025.01 - 2026.04",
-      description: "연매출 1000억의 중견 보안 기업 - 기업부설연구소 Backend 개발",
+      description: "기업부설연구소 백엔드 개발자",
       bullets: [
-        "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 백엔드 개발 (정책 변경으로 종료)",
+        "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 백엔드 개발",
         "사내 보안 관제 시스템 '블루캅' 내 사업자 관리 백엔드 설계 및 레거시 개편"
       ],
     },
@@ -40,12 +40,13 @@ export const siteConfig = {
       name: 'APEC 2025 관제 시스템 개발',
       dateRange: "2025.01 - 2025.10",
       description:
-        'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 (정책 변경으로 운영 단계 직전 종료, 백엔드 개발 80% 완료)',
+        'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템',
       skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
       bulletPoints: [
-        "공지사항, 권한관리, 시스템 설정 등 관제 센터 운영에 필수적인 관리자 RESTful API 개발",
-        "실시간 현장 요원 위치 및 이벤트 로그 수집 Rest API 개발",
-        "관제 현장에서 발생하는 이벤트(출입, 화제, 비상알림 등) 로그의 실시간 저장 로직 구축"
+        "관제 센터 운영에 필수적인 관리자 권한 제어, 공지사항, 시스템 설정 등 관리자 RESTful API 설계 및 구축",
+        "실시간 현장 요원 GPS 위치 데이터 및 긴급 이벤트 로그 수집을 위한 고성능 수집 RESTful API 개발",
+        "출입, 화재, 비상 알림 등 현장 돌발 상황 이벤트 로그의 실시간 파이프라인 및 데이터베이스 저장 로직 구축",
+        "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
       ],
     },
     {
@@ -54,10 +55,10 @@ export const siteConfig = {
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
       skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
       bulletPoints: [
-        "위치정보 사업자 관리 및 현장 요원 상태 모니터링을 위한 관리자 RESTful API 개발",
+          "기존 노후화된 레거시 코드를 FastAPI 기반의 기능별 모듈 구조로 전환하여 유지보수성 및 확장성 향상",
+        "위치정보 사업자 관리 및 현장 요원 상태 모니터링용 백오피스 관리자 RESTful API 개발",
         "iOS/Android 단말기 특성을 고려한 멀티파트 파일 업로드/다운로드 RESTful API 개발",
-        "기존 노후화된 레거시 시스템을 FastAPI 기반의 기능별 모듈 구조로 전환 및 현대화 진행",
-        "예외 처리 핸들러(GlobalExceptionHandler) 표준 정립 및 Swagger UI/Notion을 활용한 API 명세 자동화 주도"
+        "GlobalExceptionHandler를 통한 예외 처리 응답 체계 정립 및 Swagger UI/Notion 기반 API 명세 자동화 주도"
       ],
     },
     {
@@ -67,11 +68,11 @@ export const siteConfig = {
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
       skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
       bulletPoints: [
-        "월별 소비 패턴 분석 기반 맞춤형 예산 추천 로직 설계 및 구현",
-        "통계 및 예산 추천 API 응답 속도 기존 대비 3.6배 개선 (평균 65ms -> 18ms 단축)",
-        "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송 시스템 구현",
+        "통계 분석 기반의 월별 소비 패턴 분석 알고리즘 및 맞춤형 예산 추천 로직 설계 및 구현",
+        "쿼리 튜닝 및 Redis 캐싱을 통한 통계/추천 API 성능 최적화 → 응답 속도 기존 대비 3.6배 개선 (평균 65ms → 18ms)",
+        "Spring Scheduler 기반의 일 2회 자동 이메일 리포트 발송 비동기 파이프라인 구축",
         "JWT와 Redis를 결합한 Token Blacklist 구조 설계로 로그아웃 및 보안 세션 관리 강화",
-        "JUnit을 활용한 120개 이상의 단위 테스트 및 통합 테스트 작성"
+        "JUnit 및 k6를 활용한 120개 이상의 단위 및 통합 테스트 작성 및 부하 테스트를 통한 API 안정성 검증"
       ],
     },
   ],
@@ -106,10 +107,19 @@ export const siteConfig = {
       school: "남서울대학교",
       dateRange: "2020.03 - 2025.02",
       achievements: [
-        "정보통신공학과 학사",
+        "정보통신공학과 학사 졸업",
         "학점 4.19/4.5 (전공 4.3/4.5)",
       ]
     },
+    {
+      school: "조원고등학교 (경기도 수원시)",
+      dateRange: "2017.03 - 2020.02",
+      achievements: [
+        "인문계 졸업"
+      ],
+    },
+  ],
+  ETC: [
     {
       school: "멋쟁이사자처럼 백엔드스쿨 10기",
       dateRange: "2024.03 - 2024.09",
@@ -122,6 +132,7 @@ export const siteConfig = {
       school: "베트남 하이즈엉 IT 교육 봉사",
       dateRange: "2023.06 - 2023.07",
       achievements: [
+        "천안시 청소년 수련관 봉사단",
         "VR/AR 교육 봉사",
         "구글 카드보드 제작 및 IT 신기술 체험 교육",
       ],

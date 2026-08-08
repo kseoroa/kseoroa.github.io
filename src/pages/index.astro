@@ -7,6 +7,7 @@ import Experience from "../components/Experience.astro";
 import Capabilities from "../components/Capabilities.astro";
 import Projects from "../components/Projects.astro";
 import Education from "../components/Education.astro";
+import Etc from "../components/Etc.astro";
 import Certifications from "../components/Certifications.astro";
 import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
@@ -19,7 +20,7 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={siteConfig.description} />
+    <meta name="description" content={siteConfig.aboutMe} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,6 +39,7 @@ import "../styles/global.css";
       <Capabilities />
       <Projects />
       <Education />
+      <Etc />
       <Certifications />
     </section>
     <Footer />
