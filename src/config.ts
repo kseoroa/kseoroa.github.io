@@ -7,13 +7,14 @@ export const siteConfig = {
     email: "pokj9800113@gmail.com",
     github: "https://github.com/kyongseo",
   },
-  aboutMe: `"명확한 변수명과 간결한 함수로 코드 자체가 설명서가 되는 개발"을 지향합니다.
-  
-  (주)HDS에서 Python, Java 기반의 실시간 관제 시스템 및 위치정보 관리 시스템을 개발했습니다.
-    
-  "코드는 읽기 쉬워야 한다"는 원칙 아래, 주석 없이도 의도가 드러나는 명확한 변수명과 간결한 함수 작성을 지향합니다.
-  
-  안정성을 위한 테스트 코드를 개발의 당연한 과정으로 여깁니다. 120개 이상의 단위 테스트를 직접 작성하며 리팩토링 안정성을 확보했습니다.
+  aboutMe: `
+  "코드 자체가 설명서가 되는 개발"을 지향하는 백엔드 개발자입니다.
+
+(주)HDS에서 Python(FastAPI)과 Java(Spring Boot)를 주력으로 다루며 실시간 통합 관제 시스템 및 위치정보 백오피스 API 개발을 담당했습니다. 명확한 변수명과 간결한 메서드 설계를 통해 주석 없이도 의도가 드러나는 가독성 높은 코드를 작성하는 것을 원칙으로 삼고 있습니다.
+
+안정적인 서비스 운영을 위해 단위 테스트 작성을 개발의 기본으로 여깁니다. 개인 및 실무 프로젝트에서 120개 이상의 테스트 코드를 작성하며 리팩토링에 대한 안정성을 확보했고, Redis 캐싱 및 쿼리 최적화를 통해 API 응답 속도를 대폭 개선한 경험이 있습니다.
+
+문서화와 적극적인 공유를 통해 팀의 개발 생산성을 높이는 데 보람을 느낍니다. 명확한 소통과 기술적 안정성을 바탕으로 비즈니스 가치를 창출하는 개발자가 되겠습니다.
   `,
 
   skills: {
@@ -41,7 +42,7 @@ export const siteConfig = {
       dateRange: "2025.01 - 2025.10",
       description:
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템',
-      skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
+      skills: ["Python", "FastAPI", "PostgreSQL", "MongoDB", "Redis", "Docker"],
       bulletPoints: [
         "관제 센터 운영에 필수적인 관리자 권한 제어, 공지사항, 시스템 설정 등 관리자 RESTful API 설계 및 구축",
         "실시간 현장 요원 GPS 위치 데이터 및 긴급 이벤트 로그 수집을 위한 고성능 수집 RESTful API 개발",
@@ -53,7 +54,7 @@ export const siteConfig = {
       name: "블루캅 관제 시스템 위치정보 사업자 관리 백오피스",
       dateRange: "2025.01 - 2025.02",
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
-      skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
+      skills: ["Python", "FastAPI", "PostgreSQL", "MongoDB", "Redis", "Docker", "EC2"],
       bulletPoints: [
           "기존 노후화된 레거시 코드를 FastAPI 기반의 기능별 모듈 구조로 전환하여 유지보수성 및 확장성 향상",
         "위치정보 사업자 관리 및 현장 요원 상태 모니터링용 백오피스 관리자 RESTful API 개발",
