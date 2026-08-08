@@ -29,7 +29,7 @@ export const siteConfig = {
       company: "Backend Developer (연구원)",
       title: "(주) HDS",
       dateRange: "2025.01 - 2026.04",
-      description: "기업부설연구소 백엔드 개발자",
+      description: "기업부설연구소 소속 백엔드 개발자",
       bullets: [
         "APEC 2025 정부 정상회의 대비 실시간 관제 시스템 백엔드 개발",
         "사내 보안 관제 시스템 '블루캅' 내 사업자 관리 백엔드 설계 및 레거시 개편"
@@ -67,7 +67,7 @@ export const siteConfig = {
       dateRange: "2025.09 - 2025.12",
       description:
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
-      skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
+      skills: ["Java", "Spring Boot", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
       bulletPoints: [
         "통계 분석 기반의 월별 소비 패턴 분석 알고리즘 및 맞춤형 예산 추천 로직 설계 및 구현",
         "쿼리 튜닝 및 Redis 캐싱을 통한 통계/추천 API 성능 최적화 → 응답 속도 기존 대비 3.6배 개선 (평균 65ms → 18ms)",

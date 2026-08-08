@@ -4,6 +4,8 @@ import { siteConfig } from "../config";
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasCapability = siteConfig.projects && siteConfig.capabilities.length > 0;
+const hasEtc = siteConfig.ETC && siteConfig.ETC.length > 0;
 ---
 
 <footer class="relative bg-gray-50 border-t border-gray-200">
@@ -45,32 +47,6 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             </svg>
           </a>
           <a
-            href={siteConfig.social.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
-            style={`--accent-color: ${siteConfig.accentColor}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M8 11v5"></path><path d="M8 8v.01"></path><path d="M12 16v-5"
-              ></path><path d="M16 16v-3a2 2 0 1 0 -4 0"></path><path
-                d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
-              ></path></svg
-            >
-          </a>
-          <a
             href={siteConfig.social.github}
             target="_blank"
             rel="noopener noreferrer"
@@ -105,6 +81,16 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             >About</a
           >
           {
+              hasExperience && (
+                  <a
+                      href="#experience"
+                      class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+                  >
+                    Experience
+                  </a>
+              )
+          }
+          {
             hasProjects && (
               <a
                 href="#projects"
@@ -115,12 +101,12 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             )
           }
           {
-            hasExperience && (
+              hasCapability && (
               <a
-                href="#experience"
+                href="#capabilities"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Experience
+                Capability
               </a>
             )
           }
@@ -133,6 +119,16 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 Education
               </a>
             )
+          }
+          {
+              hasEtc && (
+                  <a
+                      href="#etc"
+                      class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+                  >
+                    Etc
+                  </a>
+              )
           }
         </nav>
         <p class="text-sm text-gray-500">
