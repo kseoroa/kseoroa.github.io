@@ -44,10 +44,13 @@ export const siteConfig = {
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템',
       skills: ["Python", "FastAPI", "PostgreSQL", "MongoDB", "Redis", "Docker"],
       bulletPoints: [
-        "관제 센터 운영에 필수적인 관리자 권한 제어, 공지사항, 시스템 설정 등 관리자 RESTful API 설계 및 구축",
-        "실시간 현장 요원 GPS 위치 데이터 및 긴급 이벤트 로그 수집을 위한 고성능 수집 RESTful API 개발",
-        "출입, 화재, 비상 알림 등 현장 돌발 상황 이벤트 로그의 실시간 파이프라인 및 데이터베이스 저장 로직 구축",
-        "코드 리뷰와 기술 스터디를 통한 팀 내 전문성 및 협업 역량 강화"
+        "로봇·센서·ACU·CCTV 등 이종 물리보안 장비의 이벤트를 통합 수집 및 제어하는 중앙 백엔드 서버 설계·구현",
+        "관제 센터 운영을 위한 관리자 파트 담당 - 관리자 권한 제어, 시스템 설정, 공지사항 관리 RESTful API 개발",
+        "실시간 현장 요원의 GPS 위치 데이터 및 긴급 상태 정보를 저지연으로 수집하는 RESTful API 개발",
+        "출입 통제, 화재 알림, 비상 버튼 등 현장 이벤트를 유실 없이 저장하고 수집하기 위한 데이터베이스 저장 로직 및 이벤트 파이프라인 구축",
+        "대용량 관제 로그 이력 관리를 위해 RDB(PostgreSQL)와 NoSQL(MongoDB) 기반의 데이터 보관 정책 수립",
+        "배치 스케줄러 APScheduler를 구현하여 1개월이 지난 과거 로그를 PostgreSQL에서 MongoDB로 자동 이관 및 삭제하는 파이프라인 개발",
+        "코드 리뷰 체계 도입 및 백엔드 기술 스터디 리딩을 통해 팀 내 코딩 컨벤션 정립 및 백엔드 역량 강화 지원"
       ],
     },
     {
@@ -56,10 +59,11 @@ export const siteConfig = {
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
       skills: ["Python", "FastAPI", "PostgreSQL", "MongoDB", "Redis", "Docker", "EC2"],
       bulletPoints: [
-          "기존 노후화된 레거시 코드를 FastAPI 기반의 기능별 모듈 구조로 전환하여 유지보수성 및 확장성 향상",
+        "기존 노후화된 레거시 코드를 FastAPI 기반의 기능별 모듈 구조로 전환하여 유지보수성 및 확장성 향상",
         "위치정보 사업자 관리 및 현장 요원 상태 모니터링용 백오피스 관리자 RESTful API 개발",
         "iOS/Android 단말기 특성을 고려한 멀티파트 파일 업로드/다운로드 RESTful API 개발",
-        "GlobalExceptionHandler를 통한 예외 처리 응답 체계 정립 및 Swagger UI/Notion 기반 API 명세 자동화 주도"
+        "GlobalExceptionHandler 체계를 구축하여 API 예외 응답 규격을 일관되게 정립",
+        "Swagger UI 및 Notion 연동을 통한 API 명세 자동화를 주도하여 프론트엔드/모바일 개발팀과의 소통 비용 감소"
       ],
     },
     {
