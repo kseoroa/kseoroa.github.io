@@ -48,9 +48,9 @@ const { skills } = siteConfig;
           <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow duration-300">
             <h3 class="text-lg font-semibold text-gray-900 mb-4">Infra</h3>
             <div class="flex flex-wrap gap-2">
-              {skills.Infra.split(', ').map(tool => (
-                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">
-                  {tool}
+              {skills.Infra.split(', ').map(inf => (
+                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
+                  {inf}
                 </span>
               ))}
             </div>
@@ -60,9 +60,9 @@ const { skills } = siteConfig;
           <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow duration-300">
             <h3 class="text-lg font-semibold text-gray-900 mb-4">Infra</h3>
             <div class="flex flex-wrap gap-2">
-              {skills.Databases.split(', ').map(tool => (
-                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">
-                  {tool}
+              {skills.Databases.split(', ').map(data => (
+                  <span class="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">
+                  {data}
                 </span>
               ))}
             </div>
@@ -72,9 +72,9 @@ const { skills } = siteConfig;
           <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow duration-300">
             <h3 class="text-lg font-semibold text-gray-900 mb-4">Databases</h3>
             <div class="flex flex-wrap gap-2">
-              {skills.Tools.split(', ').map(inf => (
+              {skills.Tools.split(', ').map(tool => (
                 <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">
-                  {inf}
+                  {tool}
                 </span>
               ))}
             </div>
