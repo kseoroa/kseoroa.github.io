@@ -41,7 +41,7 @@ export const siteConfig = {
       dateRange: "2025.01 - 2026.04",
       description:
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템',
-      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "MongoDB", "Redis", "WebSocket", "Docker", "GitLab CI/CD"],
+      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "MongoDB", "Redis", "WebSocket", "Docker", "AWS", "GitLab CI/CD"],
       bulletPoints: [
           "로봇, 센서, ACU, CCTV 등 서로 다른 물리보안 장비의 이벤트를 한곳에서 수집하고 제어하는 중앙 백엔드 서버 설계 및 구현",
         "관제 센터 관리자 파트 담당: 관리자 권한 제어, 시스템 설정, 공지사항 관리 RESTful API 개발",
@@ -55,7 +55,7 @@ export const siteConfig = {
       name: "블루캅 관제 시스템 위치정보 사업자 관리 백오피스",
       dateRange: "2025.01 - 2025.03",
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
-      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "MongoDB", "Redis", "Docker", "EC2"],
+      skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "MongoDB", "Redis", "Docker", "AWS EC2"],
       bulletPoints: [
         "절차형, 단일 파일 위주의 레거시 코드를 FastAPI 기반 레이어드 구조와 기능별 모듈로 나눠, 기능을 고칠 때 영향 범위를 좁힘",
         "위치정보 사업자 관리 및 현장 요원 상태 모니터링용 백오피스 관리자 전용 RESTful API 개발",
@@ -82,7 +82,7 @@ export const siteConfig = {
       dateRange: "2025.09 - 2026.101",
       description:
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
-      skills: ["Java", "Spring Boot", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
+      skills: ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
       bulletPoints: [
         "통계 분석 기반의 월별 소비 패턴 분석 알고리즘 및 맞춤형 예산 추천 로직 설계 및 구현",
         "요청마다 전체 사용자 예산 10만 건을 집계하던 예산 추천 API를 새벽 배치 사전 집계와 Redis 캐싱으로 바꿔 평균 응답 시간 3,610ms → 18.68ms (k6, 동시 사용자 20명, 약 190배)",
