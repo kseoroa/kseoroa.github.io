@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Junior BackEnd Developer",
+  name: "Junior Backend Developer",
   image: "img/profile.jpg",
   title: " 경기도 안양시       |       01.09.30",
   accentColor: "#1d4ed8",
@@ -7,21 +7,21 @@ export const siteConfig = {
     email: "pokj9800113@gmail.com",
     github: "https://github.com/kyongseo",
   },
-  aboutMe: `"코드 자체가 설명서가 되는 개발"을 지향하는 백엔드 개발자 박경서입니다.
+  aboutMe: `데이터를 정확하게 다루고, 개선은 숫자로 확인하는 백엔드 개발자 박경서입니다.
 
-(주)HDS에서 Python과 Java를 주력으로 다루며, 실시간 통합 관제 시스템 및 위치정보 백오피스 API 개발을 담당했습니다. 
+(주)HDS 기업부설연구소에서 APEC 2025 실시간 통합 관제 시스템과 위치정보 백오피스 API를 개발했습니다. 현장의 비상 이벤트를 유실 없이 저장하는 파이프라인과, 저장 확인 후에만 원본을 지우는 로그 이관 구조를 만들었습니다.
 
-명확한 변수명과 간결한 메서드 설계를 통해 주석 없이도 의도가 전달되는 가독성 높은 코드를 지향합니다.
+개인 프로젝트에서는 Java/Spring으로 계좌 이체 API를 만들며, 동시 이체 100건 중 10건만 반영되는 문제를 테스트로 재현하고 락 방식을 직접 비교해 해결했습니다.
 
-단위 테스트 작성을 개발의 기본으로 여깁니다. 시스템의 안정성과 사이드 이펙트 걱정없이 과감한 리팩토링을 가능하게 하는 핵심 기반이라고 생각하기 때문입니다.
+문제는 먼저 테스트로 재현하고, 해결 방법은 같은 조건에서 측정한 숫자로 비교해 고르는 것을 기본으로 삼고 있습니다.
   `,
 
   skills: {
-        Languages: "Python, Java, Kotlin",
-        Frameworks: "FastAPI, Spring Boot",
+        Languages: "Python, Java",
+        Frameworks: "Spring Boot, Spring Data JPA, Spring Security, FastAPI",
         Infra : "AWS, Docker, Linux",
-        Databases : "PostgreSQL, Redis, Kafka, MongoDB",
-        Tools : "IDEA, Git, Github, Jenkins, Jira",
+        Databases : "MySQL, PostgreSQL, MongoDB, Redis",
+        Tools : "IntelliJ IDEA, Git, GitHub, GitLab CI/CD, JUnit, k6",
   },
   experience: [
     {
@@ -38,63 +38,88 @@ export const siteConfig = {
   projects: [
     {
       name: 'APEC 2025 관제 시스템 개발',
-      dateRange: "2025.01 - 2025.12",
+      dateRange: "2025.01 - 2026.04",
       description:
         'APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템',
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "MongoDB", "Redis", "WebSocket", "Docker", "GitLab CI/CD"],
       bulletPoints: [
-          "APEC 2025 정상회의 대비 실시간 관제·보안 통합 시스템 구축 프로젝트",
-        "로봇·센서·ACU·CCTV 등 이종 물리보안 장비의 이벤트를 통합 수집 및 제어하는 중앙 백엔드 서버 설계·구현",
-        "관제 센터 운영을 위한 관리자 파트 담당 - 관리자 권한 제어, 시스템 설정, 공지사항 관리 RESTful API 개발",
-        "실시간 현장 요원의 GPS 위치 데이터 및 긴급 상태 정보 수집 RESTful API 개발",
-        "출입 통제, 화재 알림, 비상 버튼 등 현장 SOS 이벤트를 유실 없이 저장하고 수집하기 위한 데이터베이스 저장 로직 및 이벤트 파이프라인 구축",
-        "APScheduler를 활용해 1개월 경과 대용량 관제 이력 로그를 PostgreSQL에서 MongoDB로 자동 이관하고 검증 후 원본을 지우는 로직 구현"
+          "로봇, 센서, ACU, CCTV 등 서로 다른 물리보안 장비의 이벤트를 한곳에서 수집하고 제어하는 중앙 백엔드 서버 설계 및 구현",
+        "관제 센터 관리자 파트 담당: 관리자 권한 제어, 시스템 설정, 공지사항 관리 RESTful API 개발",
+        "현장 요원의 GPS 위치와 긴급 상태 정보를 수집하는 RESTful API 개발",
+        "운영 DB(PostgreSQL)에는 최근 1개월 로그만 두고, 이전 로그는 APScheduler 배치로 MongoDB에 자동 이관하는 구조 설계",
+        "출입 통제, 화재 알림, 비상 버튼 등 현장 SOS 이벤트를 유실 없이 저장하는 저장 로직 및 이벤트 파이프라인 구축",
+        "코드 리뷰 도입과 백엔드 스터디 리딩으로 팀 코딩 컨벤션 정립, GitLab CI/CD와 Docker 기반 배포 자동화"
       ],
     },
     {
       name: "블루캅 관제 시스템 위치정보 사업자 관리 백오피스",
-      dateRange: "2025.01 - 2025.02",
+      dateRange: "2025.01 - 2025.03",
       description: "사내 블루캅 관제 시스템 내 위치정보 사업자 관리 기능 고도화 및 레거시 코드 개선",
       skills: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "MongoDB", "Redis", "Docker", "EC2"],
       bulletPoints: [
-        "보안 관제 시스템 '블루캅' 내 기존 노후화된 레거시 코드를 FastAPI 기반 기능별 모듈 구조로 전환하여 가독성 및 유지보수성 대폭 개선",
+        "절차형, 단일 파일 위주의 레거시 코드를 FastAPI 기반 레이어드 구조와 기능별 모듈로 나눠, 기능을 고칠 때 영향 범위를 좁힘",
         "위치정보 사업자 관리 및 현장 요원 상태 모니터링용 백오피스 관리자 전용 RESTful API 개발",
         "모바일 단말(iOS/Android) 환경 특성을 고려한 멀티파트 파일 업로드/다운로드 API 구축",
-        "GlobalExceptionHandler 체계를 구축하여 API 예외 응답 규격을 일관되게 정립"
+        "GlobalExceptionHandler 도입으로 API마다 달랐던 예외 응답 형식을 하나로 통일"
       ],
     },
     {
-      name: "개인 재무 관리 시스템 (1人 개인 프로젝트)",
-      dateRange: "2025.09 - 2025.12",
+      name: "계좌 이체 API (1인 개인 프로젝트)",
+      dateRange: "2026.11 - 2026.11",
+      description:
+          "금융 서비스의 데이터 정합성을 직접 다뤄 보기 위해 만든 계좌 이체 API. 동시성 문제를 테스트로 재현하고 해결 방법을 측정으로 비교",
+      skills: ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "Docker", "JUnit"],
+      bulletPoints: [
+        "1,000원 이체 100건을 동시에 보내면 100건 모두 성공 응답을 받지만 잔액에는 10건만 반영되는 Lost Update를 실제 MySQL 테스트로 재현",
+        "비관적 락(SELECT ... FOR UPDATE) 적용 후 A→B와 B→A 동시 이체에서 약 절반이 데드락으로 실패하는 문제 발견",
+        "이체 방향과 상관없이 계좌 id가 작은 쪽부터 락을 걸도록 순서를 고정해 양방향 100건 모두 실패 없이 처리",
+        "낙관적 락(@Version, 재시도)과 같은 조건으로 비교: 재시도 5번 설정에서 55~56건 실패, 모두 성공시키려면 재시도 800번과 약 2배 시간(1.7초 → 3.3초)이 필요해 이체에는 비관적 락 선택",
+        "진행 중: k6 처리량 비교, 같은 요청이 두 번 들어와도 한 번만 이체되는 멱등성 처리"
+      ],
+    },
+    {
+      name: "개인 재무 관리 시스템 (1인 개인 프로젝트)",
+      dateRange: "2025.09 - 2026.101",
       description:
         "통계 분석 기반 맞춤형 예산 추천과 실시간 지출 모니터링을 제공하는 RESTful API (1人 개인 프로젝트)",
       skills: ["Java", "Spring Boot", "Spring Security", "PostgreSQL", "Docker", "JWT", "Redis", "JUnit", "k6"],
       bulletPoints: [
         "통계 분석 기반의 월별 소비 패턴 분석 알고리즘 및 맞춤형 예산 추천 로직 설계 및 구현",
-        "쿼리 튜닝 및 Redis 캐싱을 통한 통계/추천 API 성능 최적화 → 응답 속도 기존 대비 3.6배 개선 (평균 65ms → 18ms)",
-        "Spring Scheduler 기반의 일 2회 자동 이메일 리포트 발송 비동기 파이프라인 구축",
-        "JWT 및 Redis Token Blacklist 구조 설계로 무상태 인증 및 안전한 로그아웃/보안 세션 관리 강화",
-        "JUnit 및 k6를 활용한 120개 이상의 단위 및 통합 테스트 작성 및 부하 테스트를 통한 API 안정성 검증"
+        "요청마다 전체 사용자 예산 10만 건을 집계하던 예산 추천 API를 새벽 배치 사전 집계와 Redis 캐싱으로 바꿔 평균 응답 시간 3,610ms → 18.68ms (k6, 동시 사용자 20명, 약 190배)",
+        "Spring Scheduler 기반 일 2회 자동 이메일 리포트 발송",
+        "JWT 무상태 인증과 Redis Token Blacklist로 로그아웃한 토큰의 재사용 차단",
+        "JUnit 기반 단위 및 통합 테스트 120개 이상 작성"
       ],
     },
   ],
   capabilities: [
     {
-      title: "실무 레거시 개선 및 개발 문화 정립 (HDS 실무)",
+      title: "데이터 정합성과 동시성 제어 (계좌 이체 API)",
       bullets: [
-        "노후화된 절차형 레거시 코드를 FastAPI 기반 모듈 구조로 리팩토링하여 코드 가독성과 재사용성 개선",
-        "Swagger UI 및 Notion 기반 명세 자동화를 주도하여 타 파트(프론트/앱)와의 소통 오류 및 반복 문의 감소",
-        "Layered Architecture 및 DDD(도메인 주도 설계) 개념을 도입하여 비즈니스 로직과 인프라 계층 분리",
-        "Data Mapper 패턴 도입을 통해 데이터 변환 로직을 구조화하고, 코드 중복 제거 및 가독성 향상",
-        "팀 내 코드 리뷰 체계를 정립하고 백엔드 기술 스터디를 주도하여 코딩 컨벤션 단일화 및 품질 향상"
+        "동시 요청에서 생기는 Lost Update를 테스트로 재현하고, 비관적 락과 락 순서 고정으로 데드락까지 해결",
+        "트랜잭션 격리 수준, JPA 영속성 컨텍스트, 락 방식의 차이를 직접 측정하며 이해"
       ]
     },
     {
-      title: "성능 최적화 및 보안 아키텍처 (개인 프로젝트 역량)",
+      title: "측정 기반 성능 개선 (개인 프로젝트)",
       bullets: [
-        "SQL 쿼리 튜닝과 Redis 캐싱 도입으로 API 응답 속도를 65ms에서 18ms로 3.6배 단축하고, k6 부하 테스트를 통한 동시 접속 병목 탐지/개선",
-        "JUnit 기반 120개 이상의 단위 및 통합 테스트 케이스를 작성하여 기능 정확성 검증",
-        "Spring Security + JWT 무상태 인증 구조 구현 및 Redis Token Blacklist를 이용한 안전한 로그아웃/보안 세션 구축"
+        "k6와 동시성 테스트로 개선 전후를 숫자로 비교하고, 그 결과로 해결 방법을 선택",
+        "사전 집계와 Redis 캐싱으로 예산 추천 API 평균 응답 시간 3,610ms → 18.68ms"
+      ]
+    },
+    {
+      title: "데이터를 잃지 않는 운영 구조 설계 (HDS 실무)",
+      bullets: [
+        "현장 SOS 이벤트를 유실 없이 저장하는 이벤트 파이프라인 구축",
+        "저장 확인 후 원본을 삭제하는 로그 이관 구조로 운영 DB 부담과 데이터 유실 위험을 함께 해결"
+      ]
+    },
+    {
+      title: "구조 개선과 협업 (HDS 실무)",
+      bullets: [
+        "절차형 레거시 코드를 레이어드 구조와 기능별 모듈로 개편하고, Data Mapper 패턴으로 데이터 변환 로직을 한곳에 모음",
+        "Swagger UI와 Notion 기반 API 명세 정리를 주도해 프론트, 앱 파트의 반복 문의 감소",
+        "코드 리뷰 도입과 백엔드 기술 스터디 리딩으로 팀 코딩 컨벤션 정립"
       ]
     }
   ],
@@ -106,14 +131,7 @@ export const siteConfig = {
         "정보통신공학과 학사 졸업",
         "학점 4.19/4.5 (전공 4.3/4.5)",
       ]
-    },
-    {
-      school: "조원고등학교 (경기도 수원시)",
-      dateRange: "2017.03 - 2020.02",
-      achievements: [
-        "인문계 졸업"
-      ],
-    },
+    }
   ],
   ETC: [
     {
